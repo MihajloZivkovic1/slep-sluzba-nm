@@ -1,0 +1,47 @@
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js build output
+.next/
+.next/
+out/
+.vercel/
+
+# Local env files
+.env
+.env*.local
+
+# Logs
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Optional: ignore test coverage
+coverage/
+
+# Optional: ignore typescript build
+*.tsbuildinfo
+
+# Optional: ignore turbo build cache
+.turbo/
