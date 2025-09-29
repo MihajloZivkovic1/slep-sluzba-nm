@@ -66,6 +66,8 @@ export default function Services() {
                 {/* Service Image */}
                 <div className="mb-4 overflow-hidden rounded-lg">
                   <Image
+                    width={300}
+                    height={300}
                     src={service.image}
                     alt={service.title}
                     className="w-full h-50 object-cover hover:scale-105 transition-transform duration-300"
