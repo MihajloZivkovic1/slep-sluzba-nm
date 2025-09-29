@@ -81,18 +81,18 @@ export default function Hero() {
           </div>
 
           {/* Key Points */}
-          <div className="grid grid-cols-3 gap-3 md:gap-6 text-center px-4">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-5">
-              <div className="text-accent-400 text-xl md:text-3xl font-bold mb-1">20min</div>
-              <div className="text-gray-200 text-xs md:text-base">Prosečno vreme dolaska</div>
+          <div className="grid grid-cols-3 gap-2 md:gap-6 text-center px-4">
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
+              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">20min</div>
+              <div className="text-gray-200 text-[10px] leading-tight md:text-base">Prosečno vreme dolaska</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-5">
-              <div className="text-accent-400 text-xl md:text-3xl font-bold mb-1">24/7</div>
-              <div className="text-gray-200 text-xs md:text-base">Dostupni non-stop</div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
+              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">24/7</div>
+              <div className="text-gray-200 text-[10px] leading-tight md:text-base">Dostupni non-stop</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-5">
-              <div className="text-accent-400 text-xl md:text-3xl font-bold mb-1">2.500din</div>
-              <div className="text-gray-200 text-xs md:text-base">Cena od (RSD)</div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
+              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">2.500din</div>
+              <div className="text-gray-200 text-[10px] leading-tight md:text-base">Cena od (RSD)</div>
             </div>
           </div>
         </div>
