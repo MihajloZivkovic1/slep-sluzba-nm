@@ -1,16 +1,21 @@
 'use client'
 import Link from 'next/link'
 import { Phone, Clock, MapPin, Star } from 'lucide-react'
-
+import Image from 'next/image'
 export default function Hero() {
   return (
-    <section
-      className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden"
-      style={{
-        backgroundImage: "url('/slep-2.webp')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}>
+    <section className="relative text-white overflow-hidden">
+      {/* Optimized Background Image */}
+      <Image
+        src="/slep-2.webp"
+        alt="Šlep služba Beograd - 24/7 dostupni"
+        fill
+        priority
+        fetchPriority="high"
+        quality={90}
+        sizes="100vw"
+        className="object-cover"
+      />
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-black bg-opacity-80"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
