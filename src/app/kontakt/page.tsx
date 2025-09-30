@@ -28,7 +28,7 @@ export default function ContactPage() {
             onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
           >
             <Phone className="w-4 h-4 inline mr-2" />
-            011/333-4444
+            +381600490036
           </a>
         </div>
       </div> */}
@@ -100,7 +100,7 @@ export default function ContactPage() {
                         className="text-2xl font-bold text-blue-600 hover:text-blue-800"
                         onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
                       >
-                        011/333-4444
+                        +381600490036
                       </a>
                       <p className="text-sm text-gray-600">Dostupno 24/7</p>
                     </div>

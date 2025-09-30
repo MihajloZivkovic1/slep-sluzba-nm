@@ -27,7 +27,7 @@ export const municipalities: Municipality[] = [
     description: 'Centar Beograda',
     seo: {
       title: 'Šlep Služba Stari Grad 24/7 | Od 2.500 RSD | Stižemo za 30 min',
-      metaDescription: 'Hitna šlep služba u Stari Grad i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Stari Grad i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Stari Grad - Hitna Pomoć 24/7'
     },
     info: {
@@ -48,7 +48,7 @@ export const municipalities: Municipality[] = [
     description: 'Šumarice, Neimar',
     seo: {
       title: 'Šlep Služba Vračar 24/7 | Od 2.500 RSD | Stižemo za 25 min',
-      metaDescription: 'Hitna šlep služba u Vračar i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Vračar i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Vračar - Hitna Pomoć 24/7'
     },
     info: {
@@ -69,7 +69,7 @@ export const municipalities: Municipality[] = [
     description: 'Sava Centar',
     seo: {
       title: 'Šlep Služba Savski Venac 24/7 | Od 2.500 RSD | Stižemo za 25 min',
-      metaDescription: 'Hitna šlep služba u Savski Venac i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Savski Venac i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Savski Venac - Hitna Pomoć 24/7'
     },
     info: {
@@ -90,7 +90,7 @@ export const municipalities: Municipality[] = [
     description: 'Blokovi, Delta City',
     seo: {
       title: 'Šlep Služba Novi Beograd 24/7 | Od 2.500 RSD | Stižemo za 20 min',
-      metaDescription: 'Hitna šlep služba u Novi Beograd i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Novi Beograd i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Novi Beograd - Hitna Pomoć 24/7'
     },
     info: {
@@ -111,7 +111,7 @@ export const municipalities: Municipality[] = [
     description: 'Gardoš, BW Galerija',
     seo: {
       title: 'Šlep Služba Zemun 24/7 | Od 2.500 RSD | Stižemo za 15 min',
-      metaDescription: 'Hitna šlep služba u Zemun i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Zemun i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Zemun - Hitna Pomoć 24/7'
     },
     info: {
@@ -132,7 +132,7 @@ export const municipalities: Municipality[] = [
     description: 'Aerodrom Nikola Tesla',
     seo: {
       title: 'Šlep Služba Surčin 24/7 | Od 2.500 RSD | Stižemo za 20 min',
-      metaDescription: 'Hitna šlep služba u Surčin i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Surčin i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Surčin - Hitna Pomoć 24/7'
     },
     info: {
@@ -153,7 +153,7 @@ export const municipalities: Municipality[] = [
     description: 'Banjica, Jajinci',
     seo: {
       title: 'Šlep Služba Voždovac 24/7 | Od 2.500 RSD | Stižemo za 25 min',
-      metaDescription: 'Hitna šlep služba u Voždovac i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Voždovac i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Voždovac - Hitna Pomoć 24/7'
     },
     info: {
@@ -174,7 +174,7 @@ export const municipalities: Municipality[] = [
     description: 'Vukov Spomenik',
     seo: {
       title: 'Šlep Služba Zvezdara 24/7 | Od 2.500 RSD | Stižemo za 25 min',
-      metaDescription: 'Hitna šlep služba u Zvezdara i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Zvezdara i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Zvezdara - Hitna Pomoć 24/7'
     },
     info: {
@@ -195,7 +195,7 @@ export const municipalities: Municipality[] = [
     description: 'Smederevski put',
     seo: {
       title: 'Šlep Služba Grocka 24/7 | Od 2.500 RSD | Stižemo za 20 min',
-      metaDescription: 'Hitna šlep služba u Grocka i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Grocka i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Grocka - Hitna Pomoć 24/7'
     },
     info: {
@@ -216,7 +216,7 @@ export const municipalities: Municipality[] = [
     description: 'Banovo Brdo, Ada',
     seo: {
       title: 'Šlep Služba Čukarica 24/7 | Od 2.500 RSD | Stižemo za 30 min',
-      metaDescription: 'Hitna šlep služba u Čukarica i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Čukarica i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Čukarica - Hitna Pomoć 24/7'
     },
     info: {
@@ -237,7 +237,7 @@ export const municipalities: Municipality[] = [
     description: 'Miljakovac',
     seo: {
       title: 'Šlep Služba Rakovica 24/7 | Od 2.500 RSD | Stižemo za 30 min',
-      metaDescription: 'Hitna šlep služba u Rakovica i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Rakovica i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Rakovica - Hitna Pomoć 24/7'
     },
     info: {
@@ -258,7 +258,7 @@ export const municipalities: Municipality[] = [
     description: 'Široka okolina',
     seo: {
       title: 'Šlep Služba Pančevo 24/7 | Od 2.500 RSD | Stižemo za 10 min',
-      metaDescription: 'Hitna šlep služba u Pančevo i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: 011/333-4444',
+      metaDescription: 'Hitna šlep služba u Pančevo i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Pančevo - Hitna Pomoć 24/7'
     },
     info: {

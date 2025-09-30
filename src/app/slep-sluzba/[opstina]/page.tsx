@@ -33,7 +33,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
             className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
           >
             <Phone className="w-4 h-4 inline mr-2" />
-            011/333-4444
+            +381600490036
           </a>
         </div>
       </div> */}
@@ -203,7 +203,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
               className="w-full mt-6 bg-green-600 text-white py-3 px-6 rounded-lg font-bold hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              POTVRDITE CENU - 011/333-4444
+              POTVRDITE CENU - +381600490036
             </a>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
             className="inline-flex items-center gap-3 bg-yellow-500 text-black py-4 px-8 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-colors"
           >
             <Phone className="w-6 h-6" />
-            011/333-4444 - POZOVI ODMAH
+            +381600490036- POZOVI ODMAH
           </a>
 
           <p className="mt-4 text-green-200 text-sm">
