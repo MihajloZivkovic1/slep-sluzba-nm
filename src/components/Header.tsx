@@ -32,7 +32,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <div className="relative w-18 h-18">
               <Image
-                src="/slep-sluzba-logo.png"
+                src="/slep-sluzba-logo.webp"
                 alt="Šlep Služba NM Logo"
                 width={100}
                 height={100}

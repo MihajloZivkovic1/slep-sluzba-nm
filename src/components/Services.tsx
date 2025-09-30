@@ -7,28 +7,28 @@ const services = [
     title: 'Šlepovanje automobila',
     description: 'Do 2.5t nosivosti',
     features: ['Putnička vozila', 'Teretna vozila', 'Motocikli', 'Kvadovi'],
-    image: '/slep-2.jpg'
+    image: '/slep-2.webp'
   },
   {
     icon: Wrench,
     title: 'Pomoć na putu',
     description: 'Startovanje, gume, goriva',
     features: ['Paljenje motora', 'Zamena gume', 'Dovoz goriva', 'Popravke'],
-    image: '/slep-sneg.jpg'
+    image: '/slep-sneg.webp'
   },
   {
     icon: Truck,
     title: 'Šlepovanje kombija',
     description: 'Komercijalna vozila',
     features: ['Do 3.5t', 'Dostava robe', 'Servisni kombiji', 'Hladnjače'],
-    image: '/slep-kombi.jpg'
+    image: '/slep-kombi.webp'
   },
   {
     icon: Phone,
     title: 'Hitna intervencija',
     description: '24/7 dostupnost',
     features: ['Bez čekanja', 'Brz odziv', 'Profesionalni tim', 'Moderno vozilo'],
-    image: '/slep-3.jpg'
+    image: '/slep-3.webp'
   }
 ]
 
@@ -64,13 +64,13 @@ export default function Services() {
                 </p>
 
                 {/* Service Image */}
-                <div className="mb-4 overflow-hidden rounded-lg">
+                <div className="mb-4 overflow-hidden rounded-lg h-48 w-full">
                   <Image
-                    width={300}
+                    width={400}
                     height={300}
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-50 object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
 

@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden"
       style={{
-        backgroundImage: "url('/slep-2.jpg')",
+        backgroundImage: "url('/slep-2.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}>

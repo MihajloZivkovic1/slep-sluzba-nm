@@ -93,7 +93,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
             <div className="relative">
               <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-4 shadow-2xl">
                 <Image
-                  src="/slep-2.jpg"
+                  src="/slep-2.webp"
                   alt={`Šlep vozilo - ${municipality.name}`}
                   width={600}
                   height={400}
