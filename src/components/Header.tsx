@@ -79,7 +79,7 @@ export default function Header() {
 
           {/* Desktop Call Button */}
           <Link
-            href="tel:+38111XXXXXXX"
+            href="tel:+381600490036"
             className="hidden lg:flex items-center btn-call"
             onClick={() => {
               if (typeof window !== 'undefined' && window.gtag) {
@@ -157,7 +157,7 @@ export default function Header() {
                 Kontakt
               </Link>
               <Link
-                href="tel:+38111XXXXXXX"
+                href="tel:+381600490036"
                 className="flex items-center justify-center btn-call w-full"
                 onClick={() => {
                   closeMobileMenu();
@@ -170,7 +170,7 @@ export default function Header() {
                 }}
               >
                 <Phone className="w-5 h-5 mr-2" />
-                011/XXX-XXXX
+                +381600490036
               </Link>
             </div>
           </nav>

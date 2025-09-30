@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Main CTA */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-6 md:mb-10 px-4">
             <Link
-              href="tel:+381631754398"
+              href="tel:+381600490036"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 md:py-5 px-6 md:px-8 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-green-500/25 text-lg md:text-xl flex items-center justify-center w-full sm:w-auto"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
@@ -69,12 +69,12 @@ export default function Hero() {
               <Phone className="w-6 h-6 md:w-7 md:h-7 mr-2 animate-pulse" />
               <div className="flex flex-col items-start">
                 <span className="text-sm md:text-base">POZOVITE ODMAH</span>
-                <span className="text-base md:text-lg font-normal">063/175-4398</span>
+                <span className="text-base md:text-lg font-normal">060/049-0036</span>
               </div>
             </Link>
 
             <Link
-              href="https://wa.me/381631754398?text=Potrebna%20mi%20je%20slep%20sluzba"
+              href="https://wa.me/3810600490036?text=Potrebna%20mi%20je%20slep%20sluzba"
               target="_blank"
               className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 md:py-4 px-6 md:px-8 rounded-xl transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
             >

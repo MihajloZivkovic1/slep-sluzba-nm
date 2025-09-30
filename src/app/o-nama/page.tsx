@@ -26,7 +26,7 @@ export default function AboutPage() {
             <span className="font-semibold">HITNA POMOĆ 24/7</span>
           </div>
           <a
-            href="tel:+381113334444"
+            href="tel:+381600490036"
             className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
             onClick={trackPhoneCall}
           >
@@ -159,7 +159,7 @@ export default function AboutPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-4 max-w-lg mx-auto">
             <a
-              href="tel:+381113334444"
+              href="tel:+381600490036"
               className="bg-yellow-500 text-black py-3 px-6 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
               onClick={trackPhoneCall}
             >

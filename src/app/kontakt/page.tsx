@@ -23,7 +23,7 @@ export default function ContactPage() {
             <span className="font-semibold">HITNA POMOĆ 24/7</span>
           </div>
           <a
-            href="tel:+381113334444"
+            href="tel:+381600490036"
             className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
             onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
           >
@@ -46,7 +46,7 @@ export default function ContactPage() {
           {/* Primary Contact Methods */}
           <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
             <a
-              href="tel:+381113334444"
+              href="tel:+381600490036"
               className="bg-yellow-500 text-black py-4 px-6 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
               onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
             >
@@ -96,7 +96,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Telefon za Hitne Slučajeve</h3>
                       <a
-                        href="tel:+381113334444"
+                        href="tel:+381600490036"
                         className="text-2xl font-bold text-blue-600 hover:text-blue-800"
                         onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
                       >

@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "LocalBusiness",
     "name": "Šlep Služba NM",
     "image": "URL_to_logo",
-    "telephone": "+381-11-XXX-XXXX",
+    "telephone": "+381600490036",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Adresa",

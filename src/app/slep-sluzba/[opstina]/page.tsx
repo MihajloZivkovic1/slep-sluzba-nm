@@ -29,7 +29,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
             <span className="font-semibold">HITNA POMOĆ 24/7</span>
           </div>
           <a
-            href="tel:+381113334444"
+            href="tel:+381600490036"
             className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors"
           >
             <Phone className="w-4 h-4 inline mr-2" />
@@ -59,7 +59,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
               {/* Primary Contact Methods */}
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <a
-                  href="tel:+381113334444"
+                  href="tel:+381600490036"
                   className="bg-green-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
                 >
                   <Phone className="w-6 h-6" />
@@ -67,7 +67,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
                 </a>
 
                 <a
-                  href={`https://wa.me/381113334444?text=Potrebna%20mi%20je%20slep%20sluzba%20u%20${encodeURIComponent(municipality.name)}`}
+                  href={`https://wa.me/381600490036?text=Potrebna%20mi%20je%20slep%20sluzba%20u%20${encodeURIComponent(municipality.name)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
@@ -199,7 +199,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
               </div>
             </div>
             <a
-              href="tel:+381113334444"
+              href="tel:+381600490036"
               className="w-full mt-6 bg-green-600 text-white py-3 px-6 rounded-lg font-bold hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
@@ -218,7 +218,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
           </p>
 
           <a
-            href="tel:+381113334444"
+            href="tel:+381600490036"
             className="inline-flex items-center gap-3 bg-yellow-500 text-black py-4 px-8 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-colors"
           >
             <Phone className="w-6 h-6" />
