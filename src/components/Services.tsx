@@ -70,6 +70,7 @@ export default function Services() {
                     height={300}
                     src={service.image}
                     alt={service.title}
+                    loading="lazy"  // or omit, as this is default
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
