@@ -135,23 +135,20 @@ export default function AboutPage() {
         </div>
 
         {/* Team Section */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Naš Tim</h3>
-            <p className="text-gray-700 mb-4">
-              Naš tim čine iskusni profesionalci sa dugogodišnjim iskustvom u oblasti šlepovanja i pomoći na putu. Svaki član našeg tima prošao je specijalnu obuku i poseduje sve potrebne licence.
+        <div className="lg:col-span-2 pb-8">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">Naš Tim</h3>
+          <p className="text-gray-700 mb-4">
+            Naš tim čine iskusni profesionalci sa dugogodišnjim iskustvom u oblasti šlepovanja i pomoći na putu. Svaki član našeg tima prošao je specijalnu obuku i poseduje sve potrebne licence.
+          </p>
+          <p className="text-gray-700 mb-6">
+            Ponosan sam na naš tim koji radi sa puno posvećenosti i razumevanja za situacije u kojima se naši klijenti nalaze. Kada vas pozovete, možete biti sigurni da dolazimo sa jednim ciljem - da brzo i bezbedno rešimo vaš problem.
+          </p>
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <p className="text-blue-800 font-medium">
+              &quot;Naša misija je da budemo tu kada nas najpotrebniji - u hitnim situacijama kada vam je potrebna brza i pouzdana pomoć. &quot;
             </p>
-            <p className="text-gray-700 mb-6">
-              Ponosan sam na naš tim koji radi sa puno posvećenosti i razumevanja za situacije u kojima se naši klijenti nalaze. Kada vas pozovete, možete biti sigurni da dolazimo sa jednim ciljem - da brzo i bezbedno rešimo vaš problem.
-            </p>
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <p className="text-blue-800 font-medium">
-                &quot;Naša misija je da budemo tu kada nas najpotrebniji - u hitnim situacijama kada vam je potrebna brza i pouzdana pomoć. &quot;
-              </p>
-              <p className="text-blue-600 text-sm mt-2">- Nikola, Vlasnik Šlep Službe NM</p>
-            </div>
+            <p className="text-blue-600 text-sm mt-2">- Nikola, Vlasnik Šlep Službe NM</p>
           </div>
-
         </div>
 
         {/* Call to Action */}

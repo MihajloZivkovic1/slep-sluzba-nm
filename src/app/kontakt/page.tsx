@@ -1,5 +1,6 @@
 'use client'
 import { Phone, MessageCircle, MapPin, Clock, Mail, Star, CheckCircle } from 'lucide-react';
+import Link from 'next/link'
 
 export default function ContactPage() {
   // const [formData, setFormData] = useState({
@@ -156,41 +157,91 @@ export default function ContactPage() {
             </div>
 
             {/* Service Areas */}
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Pokrivamo Sledeće Oblasti</h3>
-              <div className="grid grid-cols-2 gap-2 text-sm">
-                <div className="space-y-1">
-                  <p className="font-medium text-blue-600">Centar Beograda:</p>
-                  <ul className="text-gray-600 space-y-1">
-                    <li>• Stari Grad</li>
-                    <li>• Vračar</li>
-                    <li>• Savski Venac</li>
-                  </ul>
-                </div>
-                <div className="space-y-1">
-                  <p className="font-medium text-blue-600">Novi Beograd:</p>
-                  <ul className="text-gray-600 space-y-1">
-                    <li>• Novi Beograd</li>
-                    <li>• Zemun</li>
-                    <li>• Surčin</li>
-                  </ul>
-                </div>
-                <div className="space-y-1">
-                  <p className="font-medium text-blue-600">Južni Deo:</p>
-                  <ul className="text-gray-600 space-y-1">
-                    <li>• Voždovac</li>
-                    <li>• Zvezdara</li>
-                    <li>• Grocka</li>
-                  </ul>
-                </div>
-                <div className="space-y-1">
-                  <p className="font-medium text-blue-600">Okolina:</p>
-                  <ul className="text-gray-600 space-y-1">
-                    <li>• Pančevo</li>
-                    <li>• Smederevo</li>
-                    <li>• Inđija</li>
-                  </ul>
-                </div>
+
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Pokrivamo Sledeće Oblasti</h3>
+            <div className="grid grid-cols-2 gap-2 text-sm">
+              <div className="space-y-1">
+                <p className="font-medium text-blue-600">Centar Beograda:</p>
+                <ul className="text-gray-600 space-y-1">
+                  <li>
+                    <Link href="/slep-sluzba/stari-grad" className="hover:text-blue-600 hover:underline">
+                      • Stari Grad
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/vracar" className="hover:text-blue-600 hover:underline">
+                      • Vračar
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/savski-venac" className="hover:text-blue-600 hover:underline">
+                      • Savski Venac
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-1">
+                <p className="font-medium text-blue-600">Novi Beograd:</p>
+                <ul className="text-gray-600 space-y-1">
+                  <li>
+                    <Link href="/slep-sluzba/novi-beograd" className="hover:text-blue-600 hover:underline">
+                      • Novi Beograd
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/zemun" className="hover:text-blue-600 hover:underline">
+                      • Zemun
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/surcin" className="hover:text-blue-600 hover:underline">
+                      • Surčin
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-1">
+                <p className="font-medium text-blue-600">Južni Deo:</p>
+                <ul className="text-gray-600 space-y-1">
+                  <li>
+                    <Link href="/slep-sluzba/vozdovac" className="hover:text-blue-600 hover:underline">
+                      • Voždovac
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/zvezdara" className="hover:text-blue-600 hover:underline">
+                      • Zvezdara
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/grocka" className="hover:text-blue-600 hover:underline">
+                      • Grocka
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-1">
+                <p className="font-medium text-blue-600">Okolina:</p>
+                <ul className="text-gray-600 space-y-1">
+                  <li>
+                    <Link href="/slep-sluzba/pancevo" className="hover:text-blue-600 hover:underline">
+                      • Pančevo
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/smederevo" className="hover:text-blue-600 hover:underline">
+                      • Smederevo
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/slep-sluzba/indjija" className="hover:text-blue-600 hover:underline">
+                      • Inđija
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
