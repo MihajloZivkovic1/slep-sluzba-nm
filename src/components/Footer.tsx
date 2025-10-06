@@ -53,12 +53,16 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Šlep Služba NM. Sva prava zadržana.
+              © 2025 Šlep Služba NM. Sva prava zadržana.
             </p>
+            <Link href="https://asarum-tech.com/sr/" className="text-gray-400 hover:text-white text-sm transition-colors">
+              Asarum-tech
+            </Link>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privatnost
               </Link>
+
               <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Uslovi korišćenja
               </Link>

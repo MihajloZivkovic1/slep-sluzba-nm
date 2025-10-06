@@ -54,7 +54,7 @@ export default function ContactPage() {
               POZOVITE ODMAH
             </a>
 
-            <a
+            {/* <a
               href="https://wa.me/381113334444?text=Potrebna%20mi%20je%20slep%20sluzba"
               target="_blank"
               rel="noopener noreferrer"
@@ -62,7 +62,7 @@ export default function ContactPage() {
             >
               <MessageCircle className="w-6 h-6" />
               WhatsApp Chat
-            </a>
+            </a> */}
           </div>
 
           <div className="flex items-center justify-center gap-6 text-sm">

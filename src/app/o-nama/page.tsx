@@ -31,7 +31,7 @@ export default function AboutPage() {
             onClick={trackPhoneCall}
           >
             <Phone className="w-4 h-4 inline mr-2" />
-            011/333-4444
+           +381600490036
           </a>
         </div>
       </div> */}
@@ -167,15 +167,15 @@ export default function AboutPage() {
               POZOVI ODMAH
             </a>
 
-            <a
-              href="https://wa.me/381113334444?text=Potrebna%20mi%20je%20slep%20sluzba"
+            {/* <a
+              href="https://wa.me/381600490036?text=Potrebna%20mi%20je%20slep%20sluzba"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white py-3 px-6 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
