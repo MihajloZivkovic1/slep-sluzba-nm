@@ -135,7 +135,13 @@ export default function Header() {
                   ))}
                 </div>
               )}
-
+              <Link
+                href="/faq"
+                className="block text-gray-700 hover:text-primary-600 font-medium"
+                onClick={closeMobileMenu}
+              >
+                FAQ
+              </Link>
               <Link
                 href="/o-nama"
                 className="block text-gray-700 hover:text-primary-600 font-medium"
