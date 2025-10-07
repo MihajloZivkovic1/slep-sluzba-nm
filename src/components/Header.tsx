@@ -66,8 +66,8 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <Link href="/cenovnik" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              Cenovnik
+            <Link href="/faq" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+              FAQ
             </Link>
             <Link href="/o-nama" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               O nama
@@ -135,13 +135,7 @@ export default function Header() {
                   ))}
                 </div>
               )}
-              <Link
-                href="/cenovnik"
-                className="block text-gray-700 hover:text-primary-600 font-medium"
-                onClick={closeMobileMenu}
-              >
-                Cenovnik
-              </Link>
+
               <Link
                 href="/o-nama"
                 className="block text-gray-700 hover:text-primary-600 font-medium"

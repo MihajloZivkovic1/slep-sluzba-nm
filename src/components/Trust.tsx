@@ -4,7 +4,7 @@ import { Star, Shield, Clock, Users } from 'lucide-react'
 const stats = [
   {
     icon: Users,
-    number: '12,700+',
+    number: '1170+',
     label: 'Uspešno prevezenih vozila',
     color: 'text-primary-600'
   },
@@ -16,7 +16,7 @@ const stats = [
   },
   {
     icon: Clock,
-    number: '15',
+    number: '7',
     label: 'Godina iskustva',
     color: 'text-green-600'
   },
@@ -105,29 +105,6 @@ export default function Trust() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Certificates */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold mb-8">Sertifikati i licence</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <Shield className="w-12 h-12 text-accent-400 mx-auto mb-2" />
-              <div className="text-sm">Licenca za prevoz</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <Shield className="w-12 h-12 text-accent-400 mx-auto mb-2" />
-              <div className="text-sm">Osiguranje</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <Shield className="w-12 h-12 text-accent-400 mx-auto mb-2" />
-              <div className="text-sm">ISO 9001</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <Shield className="w-12 h-12 text-accent-400 mx-auto mb-2" />
-              <div className="text-sm">Bezbednost</div>
-            </div>
           </div>
         </div>
       </div>

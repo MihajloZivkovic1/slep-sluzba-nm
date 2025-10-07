@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { Phone, MessageCircle, Euro, CheckCircle } from 'lucide-react';
+import { Phone, Euro, CheckCircle } from 'lucide-react';
 import { getMunicipalityBySlug } from '../../../data/municipalities';
 import Image from 'next/image';
 
@@ -108,8 +108,8 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
 
               {/* Floating trust badge */}
               <div className="absolute -bottom-6 -left-6 bg-yellow-500 text-black px-4 py-2 rounded-lg shadow-lg">
-                <div className="text-xs font-medium">15+ Godina Iskustva</div>
-                <div className="text-lg font-bold">12.700+ Vozila</div>
+                <div className="text-xs font-medium">7+ Godina Iskustva</div>
+                <div className="text-lg font-bold">1170+ Vozila</div>
               </div>
             </div>
           </div>

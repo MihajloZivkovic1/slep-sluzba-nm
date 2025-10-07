@@ -40,10 +40,10 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 leading-tight">
-            Šlep Služba Beograd
+            Šlep Služba Pančevo
             <span className="block text-accent-400">24/7</span>
             <span className="block text-xl md:text-3xl lg:text-4xl text-gray-200 font-normal mt-1 md:mt-2">
-              Stižemo za 20 min
+              Stižemo za 10-20 min
             </span>
           </h1>
 
@@ -56,7 +56,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-6 md:mb-10 px-4">
             <Link
               href="tel:+381600490036"
-              className=" btn-yellow hover:bg-green-700 text-white font-bold py-4 md:py-5 px-6 md:px-8 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-green-500/25 text-lg md:text-xl flex items-center justify-center w-full sm:w-auto"
+              className=" btn-yellow text-white font-bold py-4 md:py-5 px-6 md:px-8 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-green-500/25 text-lg md:text-xl flex items-center justify-center w-full sm:w-auto"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
                   window.gtag('event', 'phone_call', {
@@ -96,8 +96,8 @@ export default function Hero() {
               <div className="text-gray-200 text-[10px] leading-tight md:text-base">Dostupni non-stop</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
-              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">2.500din</div>
-              <div className="text-gray-200 text-[10px] leading-tight md:text-base">Cena od (RSD)</div>
+              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">3000din</div>
+              <div className="text-gray-200 text-[10px] leading-tight md:text-base">Cena vec od (RSD)</div>
             </div>
           </div>
         </div>

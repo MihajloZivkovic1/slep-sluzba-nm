@@ -1,6 +1,5 @@
-
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -35,6 +34,29 @@ export default function Footer() {
                 <span>24/7 Dostupni</span>
               </div>
             </div>
+
+            {/* Social Media */}
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold mb-3 text-gray-300">Pratite nas</h4>
+              <div className="flex space-x-4">
+                <Link
+                  href="https://facebook.com/slepsluzbanm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-accent-400 transition-colors group"
+                >
+                  <Facebook className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                </Link>
+                <Link
+                  href="https://instagram.com/slepsluzbanm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-accent-400 transition-colors group"
+                >
+                  <Instagram className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Locations */}
@@ -45,24 +67,36 @@ export default function Footer() {
               <li><Link href="/slep-sluzba/zemun" className="text-gray-400 hover:text-white transition-colors">Zemun</Link></li>
               <li><Link href="/slep-sluzba/vozdovac" className="text-gray-400 hover:text-white transition-colors">Voždovac</Link></li>
               <li><Link href="/slep-sluzba/zvezdara" className="text-gray-400 hover:text-white transition-colors">Zvezdara</Link></li>
-              <li><Link href="/lokacije" className="text-gray-400 hover:text-white transition-colors">Sve lokacije</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
               © 2025 Šlep Služba NM. Sva prava zadržana.
             </p>
-            <Link href="https://asarum-tech.com/sr/" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Asarum-tech
-            </Link>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+
+            {/* Asarum Tech - Better Design */}
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-gray-500">Dizajn & razvoj:</span>
+              <Link
+                href="https://asarum-tech.com/sr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-400 hover:text-accent-300 font-medium transition-colors flex items-center gap-1"
+              >
+                Asarum Tech
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </Link>
+            </div>
+
+            <div className="flex space-x-6">
               <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privatnost
               </Link>
-
               <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Uslovi korišćenja
               </Link>

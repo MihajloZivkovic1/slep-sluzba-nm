@@ -1,6 +1,6 @@
 'use client'
 
-import { Phone, MessageCircle, Shield, Star, CheckCircle } from 'lucide-react';
+import { Phone, Shield, Star, CheckCircle } from 'lucide-react';
 
 // Type for gtag function
 declare global {

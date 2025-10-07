@@ -404,12 +404,6 @@ const FAQPage: React.FC = () => {
               Potrebne su vam dodatne informacije?
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/cenovnik" className="bg-blue-800 hover:bg-yellow-500 hover:text-blue-800 text-white px-6 py-3 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-md border-2 border-blue-800 hover:border-yellow-500">
-                📊 Detaljan Cenovnik
-              </Link>
-              <Link href="/lokacije" className="bg-blue-800 hover:bg-yellow-500 hover:text-blue-800 text-white px-6 py-3 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-md border-2 border-blue-800 hover:border-yellow-500">
-                📍 Sve Lokacije
-              </Link>
               <Link href="/kontakt" className="bg-blue-800 hover:bg-yellow-500 hover:text-blue-800 text-white px-6 py-3 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-md border-2 border-blue-800 hover:border-yellow-500">
                 📞 Kontakt
               </Link>
