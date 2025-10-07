@@ -158,7 +158,7 @@ export default function Header() {
               </Link>
               <Link
                 href="tel:+381600490036"
-                className="flex items-center justify-center btn-call w-full"
+                className="flex items-center btn-yellow justify-center btn-call w-full"
                 onClick={() => {
                   closeMobileMenu();
                   if (typeof window !== 'undefined' && window.gtag) {
