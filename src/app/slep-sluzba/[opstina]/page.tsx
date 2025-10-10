@@ -98,6 +98,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
                   width={600}
                   height={400}
                   priority
+                  unoptimized
                   className="rounded-xl shadow-lg w-full h-auto"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />

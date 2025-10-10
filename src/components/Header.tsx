@@ -39,6 +39,7 @@ export default function Header() {
                 height={100}
                 className="object-contain"
                 priority
+                unoptimized
               />
             </div>
           </Link>

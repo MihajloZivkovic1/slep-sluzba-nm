@@ -72,6 +72,7 @@ export default function Services() {
                     alt={service.title}
                     loading="lazy"  // or omit, as this is default
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    unoptimized
                   />
                 </div>
 

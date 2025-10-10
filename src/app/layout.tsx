@@ -17,6 +17,18 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'sr_RS',
   },
+  icons: {
+    icon: '/slep-sluzba-logo.webp',
+    shortcut: '/slep-sluzba-logo.webp',
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        url: '/slep-sluzba-logo.webp',
+      }
+    ],
+  },
   robots: {
     index: true,
     follow: true,
