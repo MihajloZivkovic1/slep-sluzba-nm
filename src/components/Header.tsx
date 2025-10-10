@@ -13,6 +13,7 @@ const municipalities = [
   { name: 'Zvezdara', slug: 'zvezdara' },
   { name: 'Čukarica', slug: 'cukarica' },
   { name: 'Rakovica', slug: 'rakovica' },
+  { name: 'Palilula', slug: 'palilula' }
 ]
 
 export default function Header() {

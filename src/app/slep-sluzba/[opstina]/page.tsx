@@ -60,7 +60,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <a
                   href="tel:+381600490036"
-                  className="bg-green-500 btn-yellow text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                  className="bg-green-500 btn-yellow text-white py-4 px-6 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2"
                 >
                   <Phone className="w-6 h-6" />
                   POZOVITE ODMAH
@@ -200,7 +200,7 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
             </div>
             <a
               href="tel:+381600490036"
-              className="w-full mt-6 btn-yellow bg-green-600 text-white py-3 px-6 rounded-lg font-bold hover:bg-green-700 transition-colors flex items-center justify-center gap-2"
+              className="w-full mt-6 btn-yellow bg-green-600 text-white py-3 px-6 rounded-lg font-bold transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
               POTVRDITE CENU - +381600490036

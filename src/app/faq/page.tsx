@@ -55,12 +55,12 @@ const FAQPage: React.FC = () => {
       answer: (
         <div>
           <div className="bg-gray-50 rounded-lg p-6 my-4 border-2 border-blue-200 text-black">
-            <PriceRow service="Osnovna cena (do 10km)" price="2.500 RSD" />
+            <PriceRow service="Osnovna cena (do 10km)" price="3000 RSD" />
             <PriceRow service="Svaki dodatni kilometar" price="150 RSD" />
             <PriceRow service="Noćni rad (22:00-06:00)" price="+30%" />
             <div className="flex justify-between items-center py-4 bg-blue-800 text-white font-semibold px-6 -mx-6 -mb-6 mt-4 rounded-b-lg">
               <span>Prosečna cena u centru</span>
-              <span className="font-bold text-lg">2.500-3.500 RSD</span>
+              <span className="font-bold text-lg">3000-4000 RSD</span>
             </div>
           </div>
           <div className="bg-yellow-100 border-l-4 border-yellow-400 p-4 my-4 rounded">
@@ -91,7 +91,7 @@ const FAQPage: React.FC = () => {
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               <strong className="text-black">4. Pozovite nas:</strong>
-              <span className="text-black ml-2">011/XXX-XXXX</span>
+              <span className="text-black ml-2">+381600490036</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               <strong className="text-black">5. Sačekajte na sigurnom</strong>
@@ -121,8 +121,8 @@ const FAQPage: React.FC = () => {
               <span className="text-gray-700 ml-2">- stižemo za 15-30 minuta</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              ✅ <strong className="text-blue-800">15 godina iskustva</strong>
-              <span className="text-gray-700 ml-2">- preko 12.700 uspešnih intervencija</span>
+              ✅ <strong className="text-blue-800">7 godina iskustva</strong>
+              <span className="text-gray-700 ml-2">- preko 1170 uspešnih intervencija</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               ✅ <strong className="text-blue-800">Licencirani i osigurani</strong>
@@ -167,7 +167,7 @@ const FAQPage: React.FC = () => {
           </ul>
           <div className="bg-blue-800 text-white p-4 rounded-lg border-l-4 border-yellow-400">
             <strong className="text-white">📞 Pozovite bilo kada:</strong>
-            <span className="ml-2">011/XXX-XXXX - uvek će vam se neko javiti!</span>
+            <span className="ml-2">+381600490036 - uvek će vam se neko javiti!</span>
           </div>
         </div>
       )
@@ -186,10 +186,7 @@ const FAQPage: React.FC = () => {
           <CoverageGrid areas={['Novi Beograd', 'Zemun', 'Surčin']} />
 
           <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">🏘️ Ostale opštine:</h4>
-          <CoverageGrid areas={['Voždovac', 'Zvezdara', 'Čukarica', 'Rakovica', 'Palilula', 'Mladenovac']} />
-
-          <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">🛣️ Šira okolina:</h4>
-          <CoverageGrid areas={['Pančevo', 'Smederevo', 'Inđija']} />
+          <CoverageGrid areas={['Voždovac', 'Zvezdara', 'Čukarica', 'Rakovica', 'Palilula']} />
         </div>
       )
     },
@@ -257,65 +254,6 @@ const FAQPage: React.FC = () => {
               <span className="text-black ml-2">- na zahtev</span>
             </li>
           </ul>
-        </div>
-      )
-    },
-    {
-      id: 'payment',
-      question: 'Kako se vrši plaćanje?',
-      answer: (
-        <div>
-          <p className="text-lg font-medium mb-4 text-black"><strong>Prihvatamo sve načine plaćanja:</strong></p>
-          <ul className="space-y-3 mb-4">
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              💵 <strong className="text-black">Gotovina</strong>
-              <span className="text-black ml-2">- plaćanje na licu mesta</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              💳 <strong className="text-black">Kartica</strong>
-              <span className="text-black ml-2">- Visa, MasterCard</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              📱 <strong className="text-black">Mobilno plaćanje</strong>
-              <span className="text-black ml-2">- preko POS terminala</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              🏢 <strong className="text-black">Faktura</strong>
-              <span className="text-black ml-2">- za pravna lica (na račun)</span>
-            </li>
-          </ul>
-          <div className="bg-yellow-100 border-l-4 border-yellow-400 p-4 rounded">
-            <strong className="text-black">💡 Savet:</strong>
-            <span className="text-black ml-2">Za pravna lica nudimo mesečno fakturisanje i posebne uslove.</span>
-          </div>
-        </div>
-      )
-    },
-    {
-      id: 'insurance',
-      question: 'Da li imate osiguranje i licence?',
-      answer: (
-        <div>
-          <p className="text-lg font-medium mb-4 text-black"><strong>Potpuno smo licencirani i osigurani:</strong></p>
-          <ul className="space-y-3 mb-4">
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              ✅ <strong className="text-black">Licenca MUP-a</strong>
-              <span className="text-black ml-2">- za šlep službu</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              ✅ <strong className="text-black">Osiguranje odgovornosti</strong>
-              <span className="text-black ml-2">- do 2 miliona evra</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              ✅ <strong className="text-black">Kasko osiguranje</strong>
-              <span className="text-black ml-2">- za naša vozila</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              ✅ <strong className="text-black">Sertifikati</strong>
-              <span className="text-black ml-2">- ISO standardi kvaliteta</span>
-            </li>
-          </ul>
-          <p className="text-black">Vaše vozilo je u potpunosti zaštićeno tokom transporta!</p>
         </div>
       )
     }

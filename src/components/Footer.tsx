@@ -63,6 +63,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-6">Glavne lokacije</h4>
             <ul className="space-y-3">
+              <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Pančevo</Link></li>
               <li><Link href="/slep-sluzba/novi-beograd" className="text-gray-400 hover:text-white transition-colors">Novi Beograd</Link></li>
               <li><Link href="/slep-sluzba/zemun" className="text-gray-400 hover:text-white transition-colors">Zemun</Link></li>
               <li><Link href="/slep-sluzba/vozdovac" className="text-gray-400 hover:text-white transition-colors">Voždovac</Link></li>

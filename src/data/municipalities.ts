@@ -26,7 +26,7 @@ export const municipalities: Municipality[] = [
     slug: 'stari-grad',
     description: 'Centar Beograda',
     seo: {
-      title: 'Šlep Služba Stari Grad 24/7 | Od 2.500 RSD | Stižemo za 30 min',
+      title: 'Šlep Služba Stari Grad 24/7 | Od 3000 RSD | Stižemo za 30 min',
       metaDescription: 'Hitna šlep služba u Stari Grad i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Stari Grad - Hitna Pomoć 24/7'
     },
@@ -45,9 +45,9 @@ export const municipalities: Municipality[] = [
   {
     name: 'Vračar',
     slug: 'vracar',
-    description: 'Šumarice, Neimar',
+    description: 'Šumice, Neimar',
     seo: {
-      title: 'Šlep Služba Vračar 24/7 | Od 2.500 RSD | Stižemo za 25 min',
+      title: 'Šlep Služba Vračar 24/7 | Od 3000 RSD | Stižemo za 25 min',
       metaDescription: 'Hitna šlep služba u Vračar i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Vračar - Hitna Pomoć 24/7'
     },
@@ -68,7 +68,7 @@ export const municipalities: Municipality[] = [
     slug: 'savski-venac',
     description: 'Sava Centar',
     seo: {
-      title: 'Šlep Služba Savski Venac 24/7 | Od 2.500 RSD | Stižemo za 25 min',
+      title: 'Šlep Služba Savski Venac 24/7 | Od 3000 RSD | Stižemo za 25 min',
       metaDescription: 'Hitna šlep služba u Savski Venac i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Savski Venac - Hitna Pomoć 24/7'
     },
@@ -89,7 +89,7 @@ export const municipalities: Municipality[] = [
     slug: 'novi-beograd',
     description: 'Blokovi, Delta City',
     seo: {
-      title: 'Šlep Služba Novi Beograd 24/7 | Od 2.500 RSD | Stižemo za 20 min',
+      title: 'Šlep Služba Novi Beograd 24/7 | Od 3000 RSD | Stižemo za 20 min',
       metaDescription: 'Hitna šlep služba u Novi Beograd i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Novi Beograd - Hitna Pomoć 24/7'
     },
@@ -110,7 +110,7 @@ export const municipalities: Municipality[] = [
     slug: 'zemun',
     description: 'Gardoš, BW Galerija',
     seo: {
-      title: 'Šlep Služba Zemun 24/7 | Od 2.500 RSD | Stižemo za 15 min',
+      title: 'Šlep Služba Zemun 24/7 | Od 3000 RSD | Stižemo za 15 min',
       metaDescription: 'Hitna šlep služba u Zemun i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Zemun - Hitna Pomoć 24/7'
     },
@@ -131,7 +131,7 @@ export const municipalities: Municipality[] = [
     slug: 'surcin',
     description: 'Aerodrom Nikola Tesla',
     seo: {
-      title: 'Šlep Služba Surčin 24/7 | Od 2.500 RSD | Stižemo za 20 min',
+      title: 'Šlep Služba Surčin 24/7 | Od 3000 RSD | Stižemo za 20 min',
       metaDescription: 'Hitna šlep služba u Surčin i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Surčin - Hitna Pomoć 24/7'
     },
@@ -152,7 +152,7 @@ export const municipalities: Municipality[] = [
     slug: 'vozdovac',
     description: 'Banjica, Jajinci',
     seo: {
-      title: 'Šlep Služba Voždovac 24/7 | Od 2.500 RSD | Stižemo za 25 min',
+      title: 'Šlep Služba Voždovac 24/7 | Od 3000 RSD | Stižemo za 25 min',
       metaDescription: 'Hitna šlep služba u Voždovac i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Voždovac - Hitna Pomoć 24/7'
     },
@@ -173,7 +173,7 @@ export const municipalities: Municipality[] = [
     slug: 'zvezdara',
     description: 'Vukov Spomenik',
     seo: {
-      title: 'Šlep Služba Zvezdara 24/7 | Od 2.500 RSD | Stižemo za 25 min',
+      title: 'Šlep Služba Zvezdara 24/7 | Od 3000 RSD | Stižemo za 25 min',
       metaDescription: 'Hitna šlep služba u Zvezdara i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Zvezdara - Hitna Pomoć 24/7'
     },
@@ -194,7 +194,7 @@ export const municipalities: Municipality[] = [
     slug: 'grocka',
     description: 'Smederevski put',
     seo: {
-      title: 'Šlep Služba Grocka 24/7 | Od 2.500 RSD | Stižemo za 20 min',
+      title: 'Šlep Služba Grocka 24/7 | Od 3000 RSD | Stižemo za 20 min',
       metaDescription: 'Hitna šlep služba u Grocka i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Grocka - Hitna Pomoć 24/7'
     },
@@ -215,7 +215,7 @@ export const municipalities: Municipality[] = [
     slug: 'cukarica',
     description: 'Banovo Brdo, Ada',
     seo: {
-      title: 'Šlep Služba Čukarica 24/7 | Od 2.500 RSD | Stižemo za 30 min',
+      title: 'Šlep Služba Čukarica 24/7 | Od 3000 RSD | Stižemo za 30 min',
       metaDescription: 'Hitna šlep služba u Čukarica i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Čukarica - Hitna Pomoć 24/7'
     },
@@ -236,7 +236,7 @@ export const municipalities: Municipality[] = [
     slug: 'rakovica',
     description: 'Miljakovac',
     seo: {
-      title: 'Šlep Služba Rakovica 24/7 | Od 2.500 RSD | Stižemo za 30 min',
+      title: 'Šlep Služba Rakovica 24/7 | Od 3000 RSD | Stižemo za 30 min',
       metaDescription: 'Hitna šlep služba u Rakovica i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Rakovica - Hitna Pomoć 24/7'
     },
@@ -257,7 +257,7 @@ export const municipalities: Municipality[] = [
     slug: 'pancevo',
     description: 'Široka okolina',
     seo: {
-      title: 'Šlep Služba Pančevo 24/7 | Od 2.500 RSD | Stižemo za 10 min',
+      title: 'Šlep Služba Pančevo 24/7 | Od 3000 RSD | Stižemo za 10 min',
       metaDescription: 'Hitna šlep služba u Pančevo i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
       h1: 'Šlep Služba Pančevo - Hitna Pomoć 24/7'
     },
@@ -271,8 +271,30 @@ export const municipalities: Municipality[] = [
       basePrice: 2200
     },
     landmarks: ['Pančevo centar', 'Tamište', 'Starčevo'],
-    neighborhoods: ['Pančevo centar', 'Strelište', 'Kotež', 'Tesla']
+    neighborhoods: ['Pančevo centar', 'Strelište', 'Kotež']
+  },
+  {
+    name: 'Palilula',
+    slug: 'palilula',
+    description: 'Beogradska opština sa urbanim i prigradskim delovima',
+    seo: {
+      title: 'Šlep Služba Palilula 24/7 | Od 3000 RSD | Stižemo za 20 min',
+      metaDescription: 'Hitna šlep služba u Paliluli i okolini. ⭐ 24/7 dostupnost ⭐ Brz dolazak ⭐ Povoljna cena već od 3000 RSD. Pozovite odmah: +381600490036',
+      h1: 'Šlep Služba Palilula - Pomoć na Putu 24/7'
+    },
+    info: {
+      arrivalTime: '15-25 minuta',
+      coverage: ['Palilula', 'Karaburma', 'Višnjica', 'Borča', 'Krnjača', 'Ovča'],
+      commonPickups: ['Karaburma', 'Borča', 'Krnjača', 'Višnjica'],
+      commonDestinations: ['Servisi u Mirijevu', 'Centar grada', 'Zvezdara servisi'],
+      specializations: ['Brz odziv u špicu', 'Prevoz iz prigradskih delova', 'Pomoć na mostovima i obilaznici'],
+      distanceFromBase: 20,
+      basePrice: 3000
+    },
+    landmarks: ['Pančevački most', 'Ada Huja', 'Borča', 'Karaburma'],
+    neighborhoods: ['Karaburma', 'Višnjica', 'Borča', 'Krnjača', 'Ovča']
   }
+
 ];
 
 export function getMunicipalityBySlug(slug: string): Municipality | undefined {
