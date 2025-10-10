@@ -44,7 +44,7 @@ export default function ContactPage() {
           </p>
 
           {/* Primary Contact Methods */}
-          <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8">
+          <div className="grid md:grid-cols-1 gap-4 max-w-2xl mx-auto mb-8">
             <a
               href="tel:+381600490036"
               className="bg-yellow-500 text-black py-4 px-6 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
@@ -144,10 +144,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
                       <a
-                        href="mailto:info@slepsluzbanm.rs"
+                        href="mailto: slepsluzbanm@gmail.com"
                         className="text-purple-600 hover:text-purple-800"
                       >
-                        info@slepsluzbanm.rs
+                        slepsluzbanm@gmail.com
                       </a>
                       <p className="text-sm text-gray-600">Za opšte informacije</p>
                     </div>
@@ -223,26 +223,7 @@ export default function ContactPage() {
                   </li>
                 </ul>
               </div>
-              <div className="space-y-1">
-                <p className="font-medium text-blue-600">Okolina:</p>
-                <ul className="text-gray-600 space-y-1">
-                  <li>
-                    <Link href="/slep-sluzba/pancevo" className="hover:text-blue-600 hover:underline">
-                      • Pančevo
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/smederevo" className="hover:text-blue-600 hover:underline">
-                      • Smederevo
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/indjija" className="hover:text-blue-600 hover:underline">
-                      • Inđija
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+
             </div>
           </div>
 

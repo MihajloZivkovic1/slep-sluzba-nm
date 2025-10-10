@@ -37,7 +37,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Auto servisi Voždovac', 'Servisi Novi Beograd', 'Parking servisi'],
       specializations: ['Uske ulice starog grada', 'Parking problemi', 'Turistička zona'],
       distanceFromBase: 25,
-      basePrice: 2800
+      basePrice: 3000
     },
     landmarks: ['Kalemegdan', 'Knez Mihailova', 'Skadarlija', 'Studentski trg'],
     neighborhoods: ['Dorćol', 'Kosančićev Venac', 'Stari Grad centar']
@@ -58,7 +58,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Servisi Autokomanda', 'Veliki servisi Kumodraž', 'Centar grada'],
       specializations: ['Brda i usponi', 'Uske ulice', 'Stambene zgrade'],
       distanceFromBase: 22,
-      basePrice: 2700
+      basePrice: 3000
     },
     landmarks: ['Hram Svetog Save', 'Karađorđev park', 'Nacionalni stadion'],
     neighborhoods: ['Šumarice', 'Neimar', 'Savinac', 'Čubura']
@@ -79,7 +79,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Servisi Novi Beograd', 'Autokomanda servisi', 'Centar grada'],
       specializations: ['Luksuzne vile', 'Diplomatske rezidencije', 'Brda i krivine'],
       distanceFromBase: 24,
-      basePrice: 2750
+      basePrice: 3000
     },
     landmarks: ['Sava Centar', 'Dedinje', 'Topčider', 'Ada Ciganlija'],
     neighborhoods: ['Dedinje', 'Senjak', 'Topčider', 'Lisičji Potok']
@@ -100,7 +100,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Auto plac Novi Beograd', 'Servisi Zemun', 'Centar grada'],
       specializations: ['Veliki blokovski kompleksi', 'Tržni centri', 'Široki bulevari'],
       distanceFromBase: 18,
-      basePrice: 2600
+      basePrice: 3000
     },
     landmarks: ['Delta City', 'USCE Shopping Center', 'Genex kula', 'Arena'],
     neighborhoods: ['Fontana', 'Dr Agić', 'Blokovi', 'Ledine']
@@ -121,7 +121,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Servisi u centru Zemuna', 'Novi Beograd', 'Auto placevi'],
       specializations: ['Uske Zemunske uličice', 'Kej uz Dunav', 'Stari gradski deo'],
       distanceFromBase: 12,
-      basePrice: 2500
+      basePrice: 3500
     },
     landmarks: ['Gardoš kula', 'BW Galerija', 'Zemunski kej', 'Madlenianum'],
     neighborhoods: ['Gardoš', 'Zemun Polje', 'Gornji Grad', 'Donji Grad']
@@ -142,7 +142,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Zemun servisi', 'Novi Beograd', 'Aerodrom parking'],
       specializations: ['Aerodromski saobraćaj', 'Autoputevi', 'Ruralni putevi'],
       distanceFromBase: 15,
-      basePrice: 2550
+      basePrice: 3500
     },
     landmarks: ['Aerodrom Nikola Tesla', 'Autoput A1', 'Surčin centar'],
     neighborhoods: ['Surčin centar', 'Dobanovci', 'Jakovo', 'Boljevci']
@@ -163,7 +163,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Auto servisi Autokomanda', 'Centar grada', 'Avala'],
       specializations: ['Brdoviti teren', 'Veliki servisni centri', 'Stambeni blokovi'],
       distanceFromBase: 28,
-      basePrice: 2850
+      basePrice: 3000
     },
     landmarks: ['Autokomanda', 'TC Stadion', 'Banjica', 'Jajinci'],
     neighborhoods: ['Autokomanda', 'Banjica', 'Jajinci', 'Kumodraž']
@@ -184,7 +184,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Servisi Autokomanda', 'Centar grada', 'Pančevo servisi'],
       specializations: ['Brdovit teren', 'Uže ulice', 'Stambeni kompleksi'],
       distanceFromBase: 30,
-      basePrice: 2900
+      basePrice: 3000
     },
     landmarks: ['Vukov Spomenik', 'Crveni Krst', 'Đeram pijaca'],
     neighborhoods: ['Vukov Spomenik', 'Bogoslovija', 'Ćalije', 'Crveni Krst']
@@ -205,7 +205,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Pančevo servisi', 'Grocka servisi', 'Beograd centar'],
       specializations: ['Ruralni putevi', 'Dunavski kej', 'Seoska vozila'],
       distanceFromBase: 8,
-      basePrice: 2400
+      basePrice: 3000
     },
     landmarks: ['Grocka centar', 'Vinča', 'Dunav'],
     neighborhoods: ['Grocka centar', 'Leštane', 'Vinča', 'Brestovik']
@@ -226,7 +226,7 @@ export const municipalities: Municipality[] = [
       commonDestinations: ['Servisi Novi Beograd', 'Centar grada', 'Čukarica servisi'],
       specializations: ['Brdoviti deo', 'Ada Ciganlija pristup', 'Stambene zone'],
       distanceFromBase: 32,
-      basePrice: 3000
+      basePrice: 3200
     },
     landmarks: ['Ada Ciganlija', 'Ada Mall', 'Banovo Brdo'],
     neighborhoods: ['Banovo Brdo', 'Žarkovo', 'Julino Brdo', 'Skojevsko naselje']
@@ -252,27 +252,27 @@ export const municipalities: Municipality[] = [
     landmarks: ['Miljakovac', 'Labudovo Brdo', 'Avalski toranj'],
     neighborhoods: ['Miljakovac', 'Labudovo Brdo', 'Petlovo Brdo', 'Kneževac']
   },
-  {
-    name: 'Pančevo',
-    slug: 'pancevo',
-    description: 'Široka okolina',
-    seo: {
-      title: 'Šlep Služba Pančevo 24/7 | Od 3000 RSD | Stižemo za 10 min',
-      metaDescription: 'Hitna šlep služba u Pančevo i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
-      h1: 'Šlep Služba Pančevo - Hitna Pomoć 24/7'
-    },
-    info: {
-      arrivalTime: '5-15 minuta',
-      coverage: ['Pančevo', 'Starčevo', 'Opovo', 'Kovačica'],
-      commonPickups: ['Pančevo centar', 'Starčevo', 'Tamište', 'Kovin'],
-      commonDestinations: ['Pančevo servisi', 'Beograd servisi', 'Lokalni servisi'],
-      specializations: ['Lokalno poznavanje', 'Najbrži odziv', 'Sva vozila'],
-      distanceFromBase: 0,
-      basePrice: 2200
-    },
-    landmarks: ['Pančevo centar', 'Tamište', 'Starčevo'],
-    neighborhoods: ['Pančevo centar', 'Strelište', 'Kotež']
-  },
+  // {
+  //   name: 'Pančevo',
+  //   slug: 'pancevo',
+  //   description: 'Široka okolina',
+  //   seo: {
+  //     title: 'Šlep Služba Pančevo 24/7 | Od 3000 RSD | Stižemo za 10 min',
+  //     metaDescription: 'Hitna šlep služba u Pančevo i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
+  //     h1: 'Šlep Služba Pančevo - Hitna Pomoć 24/7'
+  //   },
+  //   info: {
+  //     arrivalTime: '5-15 minuta',
+  //     coverage: ['Pančevo', 'Starčevo', 'Opovo', 'Kovačica'],
+  //     commonPickups: ['Pančevo centar', 'Starčevo', 'Tamište', 'Kovin'],
+  //     commonDestinations: ['Pančevo servisi', 'Beograd servisi', 'Lokalni servisi'],
+  //     specializations: ['Lokalno poznavanje', 'Najbrži odziv', 'Sva vozila'],
+  //     distanceFromBase: 0,
+  //     basePrice: 2200
+  //   },
+  //   landmarks: ['Pančevo centar', 'Tamište', 'Starčevo'],
+  //   neighborhoods: ['Pančevo centar', 'Strelište', 'Kotež']
+  // },
   {
     name: 'Palilula',
     slug: 'palilula',

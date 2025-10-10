@@ -52,11 +52,11 @@ export default function AboutPage() {
           <div className="flex items-center justify-center gap-8 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <CheckCircle className="w-5 h-5 text-green-400" />
-              <span>15+ godina iskustva</span>
+              <span>7+ godina iskustva</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-yellow-400" />
-              <span>12.700+ vozila</span>
+              <span>1170+ vozila</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-blue-300" />
@@ -76,10 +76,10 @@ export default function AboutPage() {
                 Šlep Služba NM osnovana je 2009. godine sa jasnim ciljem - pružanje brze, pouzdane i profesionalne pomoći vozačima u nevolji. Počeli smo kao mala porodična firma sa jednim šlep vozilom i velikim srcem za pomaganje ljudima.
               </p>
               <p>
-                Danas smo prepoznatljiva šlep služba u Beogradu i okolini, sa moderne flotom vozila i timom od preko 10 iskusnih vozača i tehničara. Naše sedište u Pančevu omogućava nam brzu pokrivenost celokupne beogradske aglomeracije.
+                Danas smo prepoznatljiva šlep služba u Pančevu i okolini, sa moderne flotom vozila i timom od preko 10 iskusnih vozača i tehničara. Naše sedište u Pančevu omogućava nam brzu pokrivenost celokupne beogradske aglomeracije.
               </p>
               <p>
-                Gennem godine rada, uspešno smo prevezli preko <span className="font-bold text-blue-600">12.700 vozila</span> i pomogli hiljadama vozača u hitnim situacijama. Naša reputacija građena je na poverenju, brzini i profesionalnosti.
+                Za preko 7 godina rada, uspešno smo prevezli preko <span className="font-bold text-blue-600">1170 vozila</span> i pomogli hiljadama vozača u hitnim situacijama. Naša reputacija građena je na poverenju, brzini i profesionalnosti.
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 <li>Novi Beograd</li>
                 <li>Zemun</li>
                 <li>Surčin</li>
-                <li>Cukarica</li>
+                <li>Čukarica</li>
               </ul>
             </div>
             <div>
@@ -124,8 +124,6 @@ export default function AboutPage() {
               <ul className="text-gray-700 space-y-1 text-sm">
                 <li>Voždovac</li>
                 <li>Zvezdara</li>
-                <li>Pančevo</li>
-                <li>Smederevo</li>
               </ul>
             </div>
           </div>
@@ -141,11 +139,11 @@ export default function AboutPage() {
             Naš tim čine iskusni profesionalci sa dugogodišnjim iskustvom u oblasti šlepovanja i pomoći na putu. Svaki član našeg tima prošao je specijalnu obuku i poseduje sve potrebne licence.
           </p>
           <p className="text-gray-700 mb-6">
-            Ponosan sam na naš tim koji radi sa puno posvećenosti i razumevanja za situacije u kojima se naši klijenti nalaze. Kada vas pozovete, možete biti sigurni da dolazimo sa jednim ciljem - da brzo i bezbedno rešimo vaš problem.
+            Ponosan sam na naš tim koji radi sa puno posvećenosti i razumevanja za situacije u kojima se naši klijenti nalaze. Kada nas pozovete, možete biti sigurni da dolazimo sa jednim ciljem - da brzo i bezbedno rešimo vaš problem.
           </p>
           <div className="bg-blue-50 p-4 rounded-lg">
             <p className="text-blue-800 font-medium">
-              &quot;Naša misija je da budemo tu kada nas najpotrebniji - u hitnim situacijama kada vam je potrebna brza i pouzdana pomoć. &quot;
+              &quot;Naša misija je da budemo tu kada smo najpotrebniji - u hitnim situacijama kada vam je potrebna brza i pouzdana pomoć. &quot;
             </p>
             <p className="text-blue-600 text-sm mt-2">- Nikola, Vlasnik Šlep Službe NM</p>
           </div>

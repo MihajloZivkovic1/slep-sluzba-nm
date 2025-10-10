@@ -40,15 +40,6 @@ export default function Locations() {
             </Link>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <Link
-            href="/lokacije"
-            className="btn-primary inline-block"
-          >
-            Pogledajte sve lokacije
-          </Link>
-        </div>
       </div>
     </section>
   )

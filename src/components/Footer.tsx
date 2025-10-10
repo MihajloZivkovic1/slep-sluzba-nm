@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-6">Šlep Služba NM</h3>
             <p className="text-gray-400 mb-6">
-              Profesionalna šlep služba u Beogradu i okolini. Dostupni 24/7 za sve hitne situacije.
+              Profesionalna šlep služba u Pančevu i okolini. Dostupni 24/7 za sve hitne situacije.
             </p>
             <div className="space-y-3">
               <div className="flex items-center">
@@ -21,13 +21,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-accent-400" />
-                <Link href="mailto:info@slepsluzbanm.rs" className="hover:text-accent-400 transition-colors">
+                <Link href="mailto:slepsluzbanm@gmail.com" className="hover:text-accent-400 transition-colors">
                   slepsluzbanm@gmail.com
                 </Link>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 mr-3 text-accent-400" />
-                <span>Beograd, Srbija</span>
+                <span>Pančevo, Srbija</span>
               </div>
               <div className="flex items-center">
                 <Clock className="w-5 h-5 mr-3 text-accent-400" />
@@ -40,7 +40,7 @@ export default function Footer() {
               <h4 className="text-sm font-semibold mb-3 text-gray-300">Pratite nas</h4>
               <div className="flex space-x-4">
                 <Link
-                  href="https://facebook.com/slepsluzbanm"
+                  href="https://www.facebook.com/nm.slep.sluzba"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-accent-400 transition-colors group"
@@ -48,7 +48,7 @@ export default function Footer() {
                   <Facebook className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
                 </Link>
                 <Link
-                  href="https://instagram.com/slepsluzbanm"
+                  href="https://www.instagram.com/nm_slepsluzba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-accent-400 transition-colors group"
@@ -94,14 +94,14 @@ export default function Footer() {
               </Link>
             </div>
 
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privatnost
               </Link>
               <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Uslovi korišćenja
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
