@@ -4,28 +4,29 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyCallButton from '@/components/StickyCallButton'
+import Script from "next/script"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Šlep Služba NM Beograd 24/7 | Hitna Pomoć na Putu | 011/XXX-XXXX',
-  description: 'Profesionalna šlep služba u Beogradu i okolini. ⭐ 24/7 dostupnost ⭐ Stižemo za 20 min ⭐ Transparentne cene. Pozovite odmah: 011/XXX-XXXX',
+  title: 'Šlep Služba NM - Pančevo - 24/7',
+  description: 'Profesionalna šlep služba u Pančevu i okolini. ⭐ 24/7 dostupnost ⭐ Stižemo za 10 min',
   keywords: 'šlep služba beograd, slep sluzba, pomoć na putu beograd, šlep služba cena, šlep 24h',
   openGraph: {
-    title: 'Šlep Služba NM - Hitna Pomoć 24/7 Beograd',
-    description: 'Brza šlep služba u Beogradu. Stižemo za 20 minuta. Pozovite odmah!',
+    title: 'Šlep Služba NM - Pančevo - 24/7',
+    description: 'Brza šlep služba u Beogradu. Stižemo za 10 minuta. Pozovite odmah!',
     type: 'website',
     locale: 'sr_RS',
   },
   icons: {
-    icon: '/slep-sluzba-logo.webp',
-    shortcut: '/slep-sluzba-logo.webp',
+    icon: '/slep-sluzba-logo.png',
+    shortcut: '/slep-sluzba-logo.png',
     other: [
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        url: '/slep-sluzba-logo.webp',
+        url: '/slep-sluzba-logo.png',
       }
     ],
   },
@@ -56,13 +57,15 @@ export default function RootLayout({
     <html lang="sr">
       <head>
         {/* Google Tag Manager - Place as high in head as possible */}
-        <script
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PQL4XKKF');`,
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PQL4XKKF');`,
           }}
         />
       </head>

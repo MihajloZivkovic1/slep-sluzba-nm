@@ -50,7 +50,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto px-4">
-            Hitna pomoć na putu. Dostupni non-stop za sve hitne situacije u Beogradu i okolini.
+            Vaša hitna pomoć na putu. Dostupni smo non-stop za sve hitne situacije u Pančevu i okolini.
           </p>
 
           {/* Main CTA */}
@@ -89,20 +89,25 @@ export default function Hero() {
           {/* Key Points */}
           <div className="grid grid-cols-3 gap-2 md:gap-6 text-center px-4">
             <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
-              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">20min</div>
+              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">10min</div>
               <div className="text-gray-200 text-[10px] leading-tight md:text-base">Prosečno vreme dolaska</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
               <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">24/7</div>
               <div className="text-gray-200 text-[10px] leading-tight md:text-base">Dostupni non-stop</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-5">
-              <div className="text-accent-400 text-lg md:text-3xl font-bold mb-0.5 md:mb-1">3000din</div>
-              <div className="text-gray-200 text-[10px] leading-tight md:text-base">Cena vec od (RSD)</div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg md:rounded-xl p-3 md:p-5">
+              <div className="text-accent-400 text-sm sm:text-base md:text-2xl font-bold mb-1 md:mb-2">
+                ⭐⭐⭐⭐⭐ 4.8/5.0
+              </div>
+              <div className="text-gray-200 text-xs sm:text-sm md:text-base leading-tight">
+                Preko 50+ zadovoljnih klijenata
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }

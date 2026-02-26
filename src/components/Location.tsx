@@ -9,7 +9,7 @@ export default function Locations() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-            Pokrivamo ceo Beograd i okolinu
+            A pokrivamo i ceo Beograd i okolinu
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Brza šlep služba dostupna u svim beogradskim opštinama. Prosečno vreme dolaska 15-30 minuta.
