@@ -1,5 +1,4 @@
 'use client'
-import Head from 'next/head';
 import Link from 'next/link';
 import { JSX, useState } from 'react';
 
@@ -41,6 +40,70 @@ const CoverageGrid: React.FC<{ areas: string[] }> = ({ areas }) => (
   </div>
 );
 
+// FAQ Schema for structured data
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Koliko košta šlep služba u Pančevu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Osnovna cena šlep službe u Pančevu je od 3.000 RSD za prva 10 km. Za svaki dodatni kilometar naplaćujemo 150 RSD. Noćni rad (22:00-06:00) ima dodatak od 30%. Prosečna cena u Pančevu iznosi 3.000-4.000 RSD."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Šta raditi kada stane auto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1. Upalite migavce 2. Postavite trougao 30-50m iza vozila 3. Maknite se sa kolovoza 4. Pozovite šlep službu 060/049-0036 5. Sačekajte na bezbednom mestu van vozila."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Najbolja šlep služba blizu mene - kako da znam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Šlep Služba NM nudi: 0-24 dostupnost, brz odaziv za 10-20 minuta, 7 godina iskustva sa preko 1170 uspešnih intervencija, licencirani i osigurani, transparentne cene od 3000 RSD, moderna oprema za vozila do 3.5t."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Da li stvarno radite non-stop 0-24?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DA! Radimo 365 dana u godini, 0-24. Imamo dežurnu ekipu za noćne smene, radimo tokom svih praznika, ne odustajemo zbog loših vremenskih uslova. Pozovite 060/049-0036 bilo kada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koje oblasti pokrivate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokrivamo Pančevo i celu okolinu: Starčevo, Omoljica, Kačarevo, Borča, Ovča, Padinska Skela, Opovo, Kovin. Takođe pokrivamo i ceo Beograd: Stari Grad, Vračar, Novi Beograd, Zemun, Voždovac, Zvezdara, Čukarica, Rakovica, Palilula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko brzo stižete na lokaciju?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pančevo i okolina: 10-20 minuta. Beograd centar: 20-30 minuta. Novi Beograd, Zemun: 15-25 minuta. Ostale opštine: 25-35 minuta. Vreme može varirati zavisno od saobraćaja."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Koje usluge nudite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nudimo kompletne usluge: šlepovanje automobila do 2.5t, šlepovanje kombija do 3.5t, pomoć na putu (startovanje, zamena gume, dovoz goriva, otvaranje zaključanog vozila), prevoz do servisa, i transport teške mehanizacije na zahtev."
+      }
+    }
+  ]
+};
+
 const FAQPage: React.FC = () => {
   const [activeItem, setActiveItem] = useState<string | null>(null);
 
@@ -51,7 +114,7 @@ const FAQPage: React.FC = () => {
   const faqItems: FAQItem[] = [
     {
       id: 'pricing',
-      question: 'Koliko košta šlep služba u Beogradu?',
+      question: 'Koliko košta šlep služba u Pančevu?',
       answer: (
         <div>
           <div className="bg-gray-50 rounded-lg p-6 my-4 border-2 border-blue-200 text-black">
@@ -59,7 +122,7 @@ const FAQPage: React.FC = () => {
             <PriceRow service="Svaki dodatni kilometar" price="150 RSD" />
             <PriceRow service="Noćni rad (22:00-06:00)" price="+30%" />
             <div className="flex justify-between items-center py-4 bg-blue-800 text-white font-semibold px-6 -mx-6 -mb-6 mt-4 rounded-b-lg">
-              <span>Prosečna cena u centru</span>
+              <span>Prosečna cena u Pančevu</span>
               <span className="font-bold text-lg">3000-4000 RSD</span>
             </div>
           </div>
@@ -91,7 +154,7 @@ const FAQPage: React.FC = () => {
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               <strong className="text-black">4. Pozovite nas:</strong>
-              <span className="text-black ml-2">+381600490036</span>
+              <span className="text-black ml-2">060/049-0036</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               <strong className="text-black">5. Sačekajte na sigurnom</strong>
@@ -113,12 +176,12 @@ const FAQPage: React.FC = () => {
           <p className="text-lg font-medium mb-4 text-black">Evo zašto je Šlep Služba NM najbolji izbor:</p>
           <ul className="space-y-3">
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              ✅ <strong className="text-blue-800">24/7 dostupnost</strong>
+              ✅ <strong className="text-blue-800">0-24 dostupnost</strong>
               <span className="text-gray-700 ml-2">- bez pauze, svaki dan</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               ✅ <strong className="text-blue-800">Brz odaziv</strong>
-              <span className="text-gray-700 ml-2">- stižemo za 15-30 minuta</span>
+              <span className="text-gray-700 ml-2">- stižemo za 10-20 minuta u Pančevu</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               ✅ <strong className="text-blue-800">7 godina iskustva</strong>
@@ -130,23 +193,22 @@ const FAQPage: React.FC = () => {
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               ✅ <strong className="text-blue-800">Transparentne cene</strong>
-              <span className="text-gray-700 ml-2">- bez skrivenih troškova</span>
+              <span className="text-gray-700 ml-2">- od 3000 RSD, bez skrivenih troškova</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               ✅ <strong className="text-blue-800">Moderna oprema</strong>
-              <span className="text-gray-700 ml-2">- vozila do 2.5t nosivosti</span>
+              <span className="text-gray-700 ml-2">- vozila do 3.5t nosivosti</span>
             </li>
           </ul>
-          <p className="mt-4 text-gray-700">Proverite naše <strong className="text-blue-800">Google recenzije</strong> - više od 300 zadovoljnih klijenata!</p>
         </div>
       )
     },
     {
       id: '24-hours',
-      question: 'Šlep služba 24 sata Beograd - da li stvarno radite non-stop?',
+      question: 'Da li stvarno radite non-stop 0-24?',
       answer: (
         <div>
-          <p className="text-lg font-medium mb-4 text-black"><strong>DA! Radimo 365 dana u godini, 24 sata dnevno.</strong></p>
+          <p className="text-lg font-medium mb-4 text-black"><strong>DA! Radimo 365 dana u godini, 0-24.</strong></p>
           <ul className="space-y-3 mb-4">
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               🌙 <strong className="text-black">Noćne smene</strong>
@@ -167,26 +229,23 @@ const FAQPage: React.FC = () => {
           </ul>
           <div className="bg-blue-800 text-white p-4 rounded-lg border-l-4 border-yellow-400">
             <strong className="text-white">📞 Pozovite bilo kada:</strong>
-            <span className="ml-2">+381600490036 - uvek će vam se neko javiti!</span>
+            <span className="ml-2">060/049-0036 - uvek će vam se neko javiti!</span>
           </div>
         </div>
       )
     },
     {
       id: 'coverage',
-      question: 'Koje oblasti pokrivate u Beogradu?',
+      question: 'Koje oblasti pokrivate?',
       answer: (
         <div>
-          <p className="text-lg font-medium mb-4 text-black"><strong>Pokrivamo ceo Beograd i okolinu u krugu od 30km:</strong></p>
+          <p className="text-lg font-medium mb-4 text-black"><strong>Pokrivamo Pančevo, okolinu i ceo Beograd:</strong></p>
 
-          <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">🏛️ Centar Beograda:</h4>
-          <CoverageGrid areas={['Stari Grad', 'Vračar', 'Savski Venac']} />
+          <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">📍 Pančevo i okolina:</h4>
+          <CoverageGrid areas={['Pančevo', 'Starčevo', 'Omoljica', 'Kačarevo', 'Borča', 'Ovča', 'Padinska Skela', 'Opovo', 'Kovin']} />
 
-          <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">🌆 Novi Beograd i okolina:</h4>
-          <CoverageGrid areas={['Novi Beograd', 'Zemun', 'Surčin']} />
-
-          <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">🏘️ Ostale opštine:</h4>
-          <CoverageGrid areas={['Voždovac', 'Zvezdara', 'Čukarica', 'Rakovica', 'Palilula']} />
+          <h4 className="text-xl font-semibold text-blue-800 mt-6 mb-3">🏛️ Beograd:</h4>
+          <CoverageGrid areas={['Stari Grad', 'Vračar', 'Savski Venac', 'Novi Beograd', 'Zemun', 'Voždovac', 'Zvezdara', 'Čukarica', 'Rakovica', 'Palilula']} />
         </div>
       )
     },
@@ -198,8 +257,12 @@ const FAQPage: React.FC = () => {
           <p className="text-lg font-medium mb-4 text-black"><strong>Prosečno vreme dolaska:</strong></p>
           <ul className="space-y-3 mb-4">
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              🏙️ <strong className="text-black">Centar Beograda:</strong>
-              <span className="text-black ml-2">15-20 minuta</span>
+              📍 <strong className="text-black">Pančevo i okolina:</strong>
+              <span className="text-black ml-2">10-20 minuta</span>
+            </li>
+            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
+              🏙️ <strong className="text-black">Beograd centar:</strong>
+              <span className="text-black ml-2">20-30 minuta</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               🌆 <strong className="text-black">Novi Beograd, Zemun:</strong>
@@ -207,11 +270,7 @@ const FAQPage: React.FC = () => {
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               🏘️ <strong className="text-black">Ostale opštine:</strong>
-              <span className="text-black ml-2">20-30 minuta</span>
-            </li>
-            <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
-              🛣️ <strong className="text-black">Okolina (30km):</strong>
-              <span className="text-black ml-2">30-45 minuta</span>
+              <span className="text-black ml-2">25-35 minuta</span>
             </li>
           </ul>
           <div className="bg-blue-100 border-l-4 border-blue-500 p-4 rounded">
@@ -234,7 +293,7 @@ const FAQPage: React.FC = () => {
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               🚐 <strong className="text-black">Šlepovanje kombija</strong>
-              <span className="text-black ml-2">- komercijalna vozila</span>
+              <span className="text-black ml-2">- komercijalna vozila do 3.5t</span>
             </li>
             <li className="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-500 hover:bg-yellow-50 transition-colors duration-200">
               🔧 <strong className="text-black">Pomoć na putu:</strong>
@@ -261,40 +320,13 @@ const FAQPage: React.FC = () => {
 
   return (
     <>
-      <Head>
-        <title>FAQ - Šlep Služba NM | Često Postavljana Pitanja</title>
-        <meta name="description" content="Odgovori na najčešća pitanja o šlep službi u Beogradu. Cene, postupci, područja pokrivanja i sve što treba da znate o našim uslugama 24/7." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* Schema Markup for FAQ */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Koliko košta šlep služba u Beogradu?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Osnovna cena šlep službe u Beogradu je od 2.500 RSD za prva 10 km. Za svaki dodatni kilometar naplaćujemo 150 RSD. Noćni rad (22:00-06:00) ima dodatak od 30%."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Šta raditi kada stane auto?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "1. Upalite migavce 2. Postavite trougao 3. Maknite se sa kolovoza 4. Pozovite šlep službu 011/XXX-XXXX 5. Sačekajte na bezbednom mestu."
-                  }
-                }
-              ]
-            })
-          }}
-        />
-      </Head>
+      {/* FAQ Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
 
       <div className="min-h-screen bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 py-8">
@@ -304,7 +336,7 @@ const FAQPage: React.FC = () => {
               Često Postavljana Pitanja
             </h1>
             <p className="text-xl opacity-95">
-              Sve što treba da znate o našoj šlep službi
+              Sve što treba da znate o našoj šlep službi u Pančevu
             </p>
           </header>
 

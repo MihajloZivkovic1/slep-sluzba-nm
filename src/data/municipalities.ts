@@ -252,27 +252,27 @@ export const municipalities: Municipality[] = [
     landmarks: ['Miljakovac', 'Labudovo Brdo', 'Avalski toranj'],
     neighborhoods: ['Miljakovac', 'Labudovo Brdo', 'Petlovo Brdo', 'Kneževac']
   },
-  // {
-  //   name: 'Pančevo',
-  //   slug: 'pancevo',
-  //   description: 'Široka okolina',
-  //   seo: {
-  //     title: 'Šlep Služba Pančevo 24/7 | Od 3000 RSD | Stižemo za 10 min',
-  //     metaDescription: 'Hitna šlep služba u Pančevo i okolini. ⭐ 24/7 dostupnost ⭐ Transparentne cene ⭐ Brz dolazak. Pozovite odmah: +381600490036',
-  //     h1: 'Šlep Služba Pančevo - Hitna Pomoć 24/7'
-  //   },
-  //   info: {
-  //     arrivalTime: '5-15 minuta',
-  //     coverage: ['Pančevo', 'Starčevo', 'Opovo', 'Kovačica'],
-  //     commonPickups: ['Pančevo centar', 'Starčevo', 'Tamište', 'Kovin'],
-  //     commonDestinations: ['Pančevo servisi', 'Beograd servisi', 'Lokalni servisi'],
-  //     specializations: ['Lokalno poznavanje', 'Najbrži odziv', 'Sva vozila'],
-  //     distanceFromBase: 0,
-  //     basePrice: 2200
-  //   },
-  //   landmarks: ['Pančevo centar', 'Tamište', 'Starčevo'],
-  //   neighborhoods: ['Pančevo centar', 'Strelište', 'Kotež']
-  // },
+  {
+    name: 'Pančevo',
+    slug: 'pancevo',
+    description: 'Široka okolina',
+    seo: {
+      title: 'Šlep Služba Pančevo 0-24 | Od 3000 RSD | Stižemo za 10 min',
+      metaDescription: 'Hitna šlep služba u Pančevu i okolini. ⭐ 0-24 dostupnost ⭐ Transparentne cene od 3000 RSD ⭐ Brz dolazak za 10 min. Pozovite odmah: 060/049-0036',
+      h1: 'Šlep Služba Pančevo - Hitna Pomoć 0-24'
+    },
+    info: {
+      arrivalTime: '5-15 minuta',
+      coverage: ['Pančevo', 'Starčevo', 'Omoljica', 'Kačarevo', 'Borča', 'Ovča', 'Opovo', 'Kovin'],
+      commonPickups: ['Pančevo centar', 'Starčevo', 'Tamište', 'Borča', 'Kačarevo'],
+      commonDestinations: ['Pančevo servisi', 'Beograd servisi', 'Lokalni servisi'],
+      specializations: ['Lokalno poznavanje', 'Najbrži odziv', 'Sva vozila do 3.5t'],
+      distanceFromBase: 0,
+      basePrice: 3000
+    },
+    landmarks: ['Pančevo centar', 'Tamište', 'Starčevo', 'Strelište'],
+    neighborhoods: ['Pančevo centar', 'Strelište', 'Kotež', 'Vojlovica', 'Misa']
+  },
   {
     name: 'Palilula',
     slug: 'palilula',

@@ -1,5 +1,5 @@
-import { Truck, Wrench, Car, Phone } from 'lucide-react'
-import Image from 'next/image'
+import { Truck, Wrench, Car, Phone, CheckCircle } from 'lucide-react'
+import Link from 'next/link'
 
 const services = [
   {
@@ -7,28 +7,28 @@ const services = [
     title: 'Šlepovanje automobila',
     description: 'Do 2.5t nosivosti',
     features: ['Putnička vozila', 'Teretna vozila', 'Motocikli', 'Kvadovi'],
-    image: '/slep-2.webp'
+    color: 'bg-primary-600',
   },
   {
     icon: Wrench,
     title: 'Pomoć na putu',
     description: 'Startovanje, gume, goriva',
     features: ['Paljenje motora', 'Zamena gume', 'Dovoz goriva', 'Popravke'],
-    image: '/slep-sneg.webp'
+    color: 'bg-green-600',
   },
   {
     icon: Truck,
     title: 'Šlepovanje kombija',
     description: 'Komercijalna vozila',
     features: ['Do 3.5t', 'Dostava robe', 'Servisni kombiji', 'Hladnjače'],
-    image: '/slep-kombi.webp'
+    color: 'bg-purple-600',
   },
   {
     icon: Phone,
     title: 'Hitna intervencija',
-    description: '24/7 dostupnost',
+    description: '0-24 dostupnost',
     features: ['Bez čekanja', 'Brz odziv', 'Profesionalni tim', 'Moderno vozilo'],
-    image: '/slep-3.webp'
+    color: 'bg-red-600',
   }
 ]
 
@@ -36,53 +36,41 @@ export default function Services() {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             Naše usluge
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Kompletne usluge šlep službe i pomoći na putu za sve tipove vozila
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
               <div
                 key={index}
-                className="text-center bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                className="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
-                <div className="bg-primary-600 p-4 rounded-xl inline-block mb-6">
-                  <IconComponent className="w-8 h-8 text-white" />
+                <div className={`${service.color} w-14 h-14 rounded-xl flex items-center justify-center mb-5`}>
+                  <IconComponent className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
                   {service.title}
                 </h3>
-                <p className="text-primary-600 font-semibold mb-4">
+                <p className="text-primary-600 font-semibold text-sm mb-4">
                   {service.description}
                 </p>
 
-                {/* Service Image */}
-                <div className="mb-4 overflow-hidden rounded-lg h-48 w-full">
-                  <Image
-                    width={400}
-                    height={300}
-                    src={service.image}
-                    alt={service.title}
-                    loading="lazy"  // or omit, as this is default
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    unoptimized
-                  />
-                </div>
-
-                <ul className="space-y-2 text-center">
+                <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li
                       key={featureIndex}
-                      className="flex items-center justify-center text-gray-600"
+                      className="flex items-center text-gray-600 text-sm"
                     >
-                      <div className="w-2 h-2 bg-accent-500 rounded-full mr-3 flex-shrink-0"></div>
+                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
@@ -90,6 +78,17 @@ export default function Services() {
               </div>
             )
           })}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-12">
+          <Link
+            href="tel:+381600490036"
+            className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            <Phone className="w-6 h-6 mr-2" />
+            Trebate pomoć? Pozovite 060 049 0036
+          </Link>
         </div>
       </div>
     </section>

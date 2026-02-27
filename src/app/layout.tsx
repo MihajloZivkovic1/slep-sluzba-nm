@@ -4,17 +4,19 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyCallButton from '@/components/StickyCallButton'
+import UrgencyBar from '@/components/UrgencyBar'
+import StructuredData from '@/components/StructuredData'
 import Script from "next/script"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Šlep Služba NM - Pančevo - 24/7',
-  description: 'Profesionalna šlep služba u Pančevu i okolini. ⭐ 24/7 dostupnost ⭐ Stižemo za 10 min',
-  keywords: 'šlep služba beograd, slep sluzba, pomoć na putu beograd, šlep služba cena, šlep 24h',
+  title: 'Šlep Služba Pančevo 0-24 | Stižemo za 10 min | Pozovite Odmah',
+  description: 'Šlep služba Pančevo i okolina — dostupni 0-24. Stižemo za 10 minuta. Šlepanje svih vozila, pomoć na putu. Povoljne cene. ☎ 060 049 0036',
+  keywords: 'šlep služba pančevo, slep sluzba pancevo, šlep pančevo, pomoć na putu pančevo, šlep služba cena, šlep 0-24, slep sluzba',
   openGraph: {
-    title: 'Šlep Služba NM - Pančevo - 24/7',
-    description: 'Brza šlep služba u Beogradu. Stižemo za 10 minuta. Pozovite odmah!',
+    title: 'Šlep Služba Pančevo 0-24 | Stižemo za 10 min',
+    description: 'Profesionalna šlep služba u Pančevu i okolini. Stižemo za 10 minuta. Povoljne cene. Pozovite odmah!',
     type: 'website',
     locale: 'sr_RS',
   },
@@ -56,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="sr">
       <head>
+        <StructuredData />
         {/* Google Tag Manager - Place as high in head as possible */}
         <Script
           id="google-tag-manager"
@@ -80,6 +83,7 @@ export default function RootLayout({
           />
         </noscript>
 
+        <UrgencyBar />
         <Header />
         <main className="min-h-screen">
           {children}

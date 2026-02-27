@@ -2,9 +2,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, Phone } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
 const municipalities = [
+  { name: 'Pančevo', slug: '', isHome: true },
   { name: 'Stari Grad', slug: 'stari-grad' },
   { name: 'Vračar', slug: 'vracar' },
   { name: 'Novi Beograd', slug: 'novi-beograd' },
@@ -20,7 +21,6 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [isLocationsOpen, setIsLocationsOpen] = useState(false)
 
-  // Function to close mobile menu
   const closeMobileMenu = () => {
     setIsOpen(false)
     setIsLocationsOpen(false)
@@ -58,9 +58,9 @@ export default function Header() {
                 <div className="grid grid-cols-2 gap-2 p-4">
                   {municipalities.map((municipality) => (
                     <Link
-                      key={municipality.slug}
-                      href={`/slep-sluzba/${municipality.slug}`}
-                      className="text-sm text-gray-700 hover:text-primary-600 hover:bg-gray-50 px-3 py-2 rounded transition-colors"
+                      key={municipality.slug || 'pancevo'}
+                      href={municipality.isHome ? '/' : `/slep-sluzba/${municipality.slug}`}
+                      className={`text-sm hover:text-primary-600 hover:bg-gray-50 px-3 py-2 rounded transition-colors ${municipality.isHome ? 'text-primary-600 font-semibold' : 'text-gray-700'}`}
                     >
                       {municipality.name}
                     </Link>
@@ -78,23 +78,6 @@ export default function Header() {
               Kontakt
             </Link>
           </nav>
-
-          {/* Desktop Call Button */}
-          <Link
-            href="tel:+381600490036"
-            className="hidden lg:flex btn-yellow items-center btn-call"
-            onClick={() => {
-              if (typeof window !== 'undefined' && window.gtag) {
-                window.gtag('event', 'phone_call', {
-                  event_category: 'engagement',
-                  event_label: 'header_call'
-                });
-              }
-            }}
-          >
-            <Phone className="w-5 h-5 mr-2" />
-            +381600490036
-          </Link>
 
           {/* Mobile menu button */}
           <button
@@ -127,9 +110,9 @@ export default function Header() {
                 <div className="pl-4 space-y-2">
                   {municipalities.map((municipality) => (
                     <Link
-                      key={municipality.slug}
-                      href={`/slep-sluzba/${municipality.slug}`}
-                      className="block text-sm text-gray-600 hover:text-primary-600"
+                      key={municipality.slug || 'pancevo'}
+                      href={municipality.isHome ? '/' : `/slep-sluzba/${municipality.slug}`}
+                      className={`block text-sm hover:text-primary-600 ${municipality.isHome ? 'text-primary-600 font-semibold' : 'text-gray-600'}`}
                       onClick={closeMobileMenu}
                     >
                       {municipality.name}
@@ -157,22 +140,6 @@ export default function Header() {
                 onClick={closeMobileMenu}
               >
                 Kontakt
-              </Link>
-              <Link
-                href="tel:+381600490036"
-                className="flex items-center btn-yellow justify-center btn-call w-full"
-                onClick={() => {
-                  closeMobileMenu();
-                  if (typeof window !== 'undefined' && window.gtag) {
-                    window.gtag('event', 'phone_call', {
-                      event_category: 'engagement',
-                      event_label: 'mobile_menu_call'
-                    });
-                  }
-                }}
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                +381600490036
               </Link>
             </div>
           </nav>

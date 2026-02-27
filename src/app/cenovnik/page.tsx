@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import PriceCalculator from '@/components/PriceCalculator'
 
 export const metadata: Metadata = {
-  title: 'Cenovnik Šlep Službe | Transparentne Cene | Šlep Služba NM Beograd',
-  description: 'Pogledajte naš transparentni cenovnik šlep službe. Cene od 2.500 RSD. Kalkulator za brzo izračunavanje troškova šlepanja u Beogradu.',
-  keywords: 'šlep služba cena, cenovnik šlepanja, koliko košta šlep služba beograd'
+  title: 'Cenovnik Šlep Službe Pančevo | Povoljne Cene 0-24 | Šlep Služba NM',
+  description: 'Transparentan cenovnik šlep službe u Pančevu. Cene od 3.000 RSD. Kalkulator za brzo izračunavanje troškova šlepanja. ☎ 060/049-0036',
+  keywords: 'šlep služba cena pančevo, cenovnik šlepanja pančevo, koliko košta šlep služba pančevo'
 }
 
 export default function CenovnikPage() {
@@ -16,7 +16,7 @@ export default function CenovnikPage() {
             Cenovnik
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Bez skrivenih troškova. Fer cene za sve naše usluge šlep službe u Beogradu i okolini.
+            Bez skrivenih troškova. Fer cene za sve naše usluge šlep službe u Pančevu i okolini.
           </p>
         </div>
 
