@@ -40,13 +40,13 @@ export default function AboutPage() {
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
-            Šlep Služba NM Beograd 24/7
+            Šlep Služba NM Pančevo 0-24
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            Profesionalna šlep služba u Beogradu i okolini
+            Profesionalna šlep služba u Pančevu i okolini
           </p>
           <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-blue-200">
-            Već 15 godina pružamo pouzdanu hitnu pomoć na putu. Naš tim iskusnih profesionalaca dostupan je 24 sata dnevno, 7 dana u nedelji za sve vaše potrebe šlepovanja i pomoći na putu.
+            Već 7 godina pružamo pouzdanu hitnu pomoć na putu. Naš tim iskusnih profesionalaca dostupan je 0-24, 365 dana u godini za sve vaše potrebe šlepovanja i pomoći na putu.
           </p>
 
           <div className="flex items-center justify-center gap-8 text-sm md:text-base">
@@ -73,10 +73,10 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Naša Priča</h2>
             <div className="prose prose-lg text-gray-700 space-y-6">
               <p>
-                Šlep Služba NM osnovana je 2009. godine sa jasnim ciljem - pružanje brze, pouzdane i profesionalne pomoći vozačima u nevolji. Počeli smo kao mala porodična firma sa jednim šlep vozilom i velikim srcem za pomaganje ljudima.
+                Šlep Služba NM osnovana je sa jasnim ciljem - pružanje brze, pouzdane i profesionalne pomoći vozačima u nevolji. Počeli smo kao mala porodična firma sa jednim šlep vozilom i velikim srcem za pomaganje ljudima.
               </p>
               <p>
-                Danas smo prepoznatljiva šlep služba u Pančevu i okolini, sa moderne flotom vozila i timom od preko 10 iskusnih vozača i tehničara. Naše sedište u Pančevu omogućava nam brzu pokrivenost celokupne beogradske aglomeracije.
+                Danas smo prepoznatljiva šlep služba u Pančevu i okolini, sa modernom flotom vozila i timom iskusnih vozača i tehničara. Naše sedište u Pančevu omogućava nam brzu pokrivenost cele okoline — od Starčeva i Omoljice do Borče i Beograda.
               </p>
               <p>
                 Za preko 7 godina rada, uspešno smo prevezli preko <span className="font-bold text-blue-600">1170 vozila</span> i pomogli hiljadama vozača u hitnim situacijama. Naša reputacija građena je na poverenju, brzini i profesionalnosti.
@@ -128,7 +128,7 @@ export default function AboutPage() {
             </div>
           </div>
           <p className="text-center text-gray-600 mt-6">
-            <strong>Ukupno pokrivamo:</strong> Ceo Beograd + 30km radius oko grada
+            <strong>Ukupno pokrivamo:</strong> Pančevo, okolina i ceo Beograd
           </p>
         </div>
 

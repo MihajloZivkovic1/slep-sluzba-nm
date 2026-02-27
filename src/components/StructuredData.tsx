@@ -3,24 +3,66 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Šlep Služba NM",
-    "image": "URL_to_logo",
+    "image": "https://slepsluzba-nm.rs/slep-sluzba-logo.webp",
     "telephone": "+381600490036",
+    "email": "slepsluzbanm@gmail.com",
+    "url": "https://slepsluzba-nm.rs",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Adresa",
-      "addressLocality": "Beograd",
+      "addressLocality": "Pančevo",
+      "addressRegion": "Vojvodina",
       "addressCountry": "RS"
     },
-    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
-    "priceRange": "$"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "44.8708",
+      "longitude": "20.6403"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "Od 3000 RSD",
+    "areaServed": [
+      { "@type": "City", "name": "Pančevo" },
+      { "@type": "Place", "name": "Starčevo" },
+      { "@type": "Place", "name": "Omoljica" },
+      { "@type": "Place", "name": "Kačarevo" },
+      { "@type": "Place", "name": "Borča" },
+      { "@type": "Place", "name": "Ovča" },
+      { "@type": "City", "name": "Beograd" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "50",
+      "bestRating": "5"
+    }
   }
 
   const emergencyServiceSchema = {
     "@context": "https://schema.org",
     "@type": "EmergencyService",
+    "name": "Šlep Služba NM - Hitna Pomoć na Putu",
     "serviceType": "Towing Service",
-    "areaServed": "Belgrade, Serbia",
-    "availableLanguage": "Serbian"
+    "telephone": "+381600490036",
+    "areaServed": {
+      "@type": "City",
+      "name": "Pančevo",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "Srbija"
+      }
+    },
+    "availableLanguage": "Serbian",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
   }
 
   return (

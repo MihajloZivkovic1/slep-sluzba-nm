@@ -1,5 +1,7 @@
 // components/Trust.tsx
-import { Star, Shield, Clock, Users } from 'lucide-react'
+'use client'
+import Link from 'next/link'
+import { Star, Shield, Clock, Users, Phone } from 'lucide-react'
 
 const stats = [
   {
@@ -33,19 +35,19 @@ const reviews = [
     name: 'Marko Petrović',
     rating: 5,
     text: 'Stigli su za 15 minuta u 2 ujutru. Profesionalno i brzo rešili problem.',
-    location: 'Novi Beograd'
+    location: 'Pančevo'
   },
   {
     name: 'Ana Jovanović',
     rating: 5,
     text: 'Odličan servis, pristojni ljudi. Preporučujem svima!',
-    location: 'Zemun'
+    location: 'Starčevo'
   },
   {
     name: 'Stefan Nikolić',
     rating: 5,
     text: 'Fer cena, brza usluga. Definitivno pozivam ponovo ako zatreba.',
-    location: 'Vračar'
+    location: 'Borča'
   }
 ]
 
@@ -59,7 +61,7 @@ export default function Trust() {
             Zašto nas biraju
           </h2>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto mb-12">
-            Godinama smo lideri u pružanju usluga šlep službe u Beogradu
+            Profesionalna šlep služba u Pančevu i okolini
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -83,7 +85,7 @@ export default function Trust() {
         </div>
 
         {/* Reviews Section */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
             Šta kažu naši klijenti
           </h3>
@@ -106,6 +108,25 @@ export default function Trust() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center">
+          <Link
+            href="tel:+381600490036"
+            className="inline-flex items-center bg-accent-400 hover:bg-accent-500 text-gray-900 font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.gtag) {
+                window.gtag('event', 'phone_call', {
+                  event_category: 'engagement',
+                  event_label: 'trust_section_cta'
+                });
+              }
+            }}
+          >
+            <Phone className="w-6 h-6 mr-2" />
+            Pozovite odmah: 060/049-0036
+          </Link>
         </div>
       </div>
     </section>
