@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { Phone, Euro, CheckCircle } from 'lucide-react';
 import { getMunicipalityBySlug } from '../../../data/municipalities';
 import Image from 'next/image';
+import PhoneCallButton from '../../../components/PhoneCallButton';
 
 interface MunicipalityPageProps {
   params: Promise<{
@@ -58,13 +59,13 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
 
               {/* Primary Contact Methods */}
               <div className="grid md:grid-cols-2 gap-4 mb-8">
-                <a
-                  href="tel:+381600490036"
+                <PhoneCallButton
+                  label={`location_${opstina}_hero`}
                   className="bg-green-500 btn-yellow text-white py-4 px-6 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2"
                 >
                   <Phone className="w-6 h-6" />
                   POZOVITE ODMAH
-                </a>
+                </PhoneCallButton>
 
                 {/* <a
                   href={`https://wa.me/381600490036?text=Potrebna%20mi%20je%20slep%20sluzba%20u%20${encodeURIComponent(municipality.name)}`}
@@ -199,13 +200,13 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
                 <span className="font-bold text-green-600">+30%</span>
               </div>
             </div>
-            <a
-              href="tel:+381600490036"
+            <PhoneCallButton
+              label={`location_${opstina}_pricing`}
               className="w-full mt-6 btn-yellow bg-green-600 text-white py-3 px-6 rounded-lg font-bold transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
               POTVRDITE CENU - +381600490036
-            </a>
+            </PhoneCallButton>
           </div>
         </div>
 
@@ -218,13 +219,13 @@ export default async function MunicipalityPage({ params }: MunicipalityPageProps
             Ne gubite vreme - pozovite odmah! Stižemo za {municipality.info.arrivalTime.split('-')[0]} minuta.
           </p>
 
-          <a
-            href="tel:+381600490036"
+          <PhoneCallButton
+            label={`location_${opstina}_bottom_cta`}
             className="inline-flex items-center gap-3 bg-yellow-500 text-black py-4 px-8 rounded-lg font-bold text-xl hover:bg-yellow-400 transition-colors"
           >
             <Phone className="w-6 h-6" />
-            +381600490036- POZOVI ODMAH
-          </a>
+            +381600490036 - POZOVI ODMAH
+          </PhoneCallButton>
 
           <p className="mt-4 text-green-200 text-sm">
             Dostupni 24/7 • Od {municipality.info.basePrice} RSD • Licencirani vozači

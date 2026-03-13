@@ -1,6 +1,5 @@
 'use client'
 import { Phone, MapPin, Clock, Mail, Star, CheckCircle } from 'lucide-react';
-import Link from 'next/link'
 
 export default function ContactPage() {
   // const [formData, setFormData] = useState({
@@ -48,7 +47,14 @@ export default function ContactPage() {
             <a
               href="tel:+381600490036"
               className="bg-yellow-500 text-black py-4 px-6 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
-              onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'phone_call', {
+                    event_category: 'engagement',
+                    event_label: 'contact_page_hero'
+                  });
+                }
+              }}
             >
               <Phone className="w-6 h-6" />
               POZOVITE ODMAH
@@ -98,7 +104,14 @@ export default function ContactPage() {
                       <a
                         href="tel:+381600490036"
                         className="text-2xl font-bold text-blue-600 hover:text-blue-800"
-                        onClick={() => typeof gtag !== 'undefined' && gtag('event', 'phone_call')}
+                        onClick={() => {
+                          if (typeof window !== 'undefined' && window.gtag) {
+                            window.gtag('event', 'phone_call', {
+                              event_category: 'engagement',
+                              event_label: 'contact_page_info_card'
+                            });
+                          }
+                        }}
                       >
                         +381600490036
                       </a>
@@ -116,7 +129,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Sedište</h3>
                       <p className="text-gray-700">Pančevo i okolina</p>
-                      <p className="text-sm text-gray-600">Pokrivamo ceo Beograd + 30km radius</p>
+                      <p className="text-sm text-gray-600">Pančevo i bliža okolina</p>
                     </div>
                   </div>
                 </div>
@@ -161,70 +174,37 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Pokrivamo Sledeće Oblasti</h3>
-            <div className="grid grid-cols-2 gap-2 text-sm">
-              <div className="space-y-1">
-                <p className="font-medium text-blue-600">Centar Beograda:</p>
-                <ul className="text-gray-600 space-y-1">
-                  <li>
-                    <Link href="/slep-sluzba/stari-grad" className="hover:text-blue-600 hover:underline">
-                      • Stari Grad
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/vracar" className="hover:text-blue-600 hover:underline">
-                      • Vračar
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/savski-venac" className="hover:text-blue-600 hover:underline">
-                      • Savski Venac
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="space-y-1">
-                <p className="font-medium text-blue-600">Novi Beograd:</p>
-                <ul className="text-gray-600 space-y-1">
-                  <li>
-                    <Link href="/slep-sluzba/novi-beograd" className="hover:text-blue-600 hover:underline">
-                      • Novi Beograd
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/zemun" className="hover:text-blue-600 hover:underline">
-                      • Zemun
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/surcin" className="hover:text-blue-600 hover:underline">
-                      • Surčin
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="space-y-1">
-                <p className="font-medium text-blue-600">Južni Deo:</p>
-                <ul className="text-gray-600 space-y-1">
-                  <li>
-                    <Link href="/slep-sluzba/vozdovac" className="hover:text-blue-600 hover:underline">
-                      • Voždovac
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/zvezdara" className="hover:text-blue-600 hover:underline">
-                      • Zvezdara
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/slep-sluzba/grocka" className="hover:text-blue-600 hover:underline">
-                      • Grocka
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Pokrivamo Pančevo i Okolinu</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Starčevo
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Vojlovica
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Borča
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Omoljica
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Kačarevo
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Opovo
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-blue-600" />
+                Kovin
+              </li>
+            </ul>
           </div>
 
         </div>

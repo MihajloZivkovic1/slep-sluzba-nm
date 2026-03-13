@@ -34,7 +34,7 @@ export default function Footer() {
       </div>
 
       <div className="container-custom py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Info */}
           <div>
@@ -45,7 +45,18 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-accent-400" />
-                <Link href="tel:+381600490036" className="hover:text-accent-400 transition-colors">
+                <Link
+                  href="tel:+381600490036"
+                  className="hover:text-accent-400 transition-colors"
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.gtag) {
+                      window.gtag('event', 'phone_call', {
+                        event_category: 'engagement',
+                        event_label: 'footer_phone_number'
+                      });
+                    }
+                  }}
+                >
                   060 049 0036
                 </Link>
               </div>
@@ -102,25 +113,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Beograd lokacije */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Beograd</h4>
-            <ul className="space-y-2">
-              <li><Link href="/slep-sluzba/novi-beograd" className="text-gray-400 hover:text-white transition-colors text-sm">Novi Beograd</Link></li>
-              <li><Link href="/slep-sluzba/zemun" className="text-gray-400 hover:text-white transition-colors text-sm">Zemun</Link></li>
-              <li><Link href="/slep-sluzba/vozdovac" className="text-gray-400 hover:text-white transition-colors text-sm">Voždovac</Link></li>
-              <li><Link href="/slep-sluzba/zvezdara" className="text-gray-400 hover:text-white transition-colors text-sm">Zvezdara</Link></li>
-              <li><Link href="/slep-sluzba/palilula" className="text-gray-400 hover:text-white transition-colors text-sm">Palilula</Link></li>
-              <li><Link href="/slep-sluzba/cukarica" className="text-gray-400 hover:text-white transition-colors text-sm">Čukarica</Link></li>
-            </ul>
-          </div>
-
           {/* Brzi linkovi */}
           <div>
             <h4 className="text-lg font-semibold mb-6">Stranice</h4>
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors text-sm">Početna</Link></li>
               <li><Link href="/o-nama" className="text-gray-400 hover:text-white transition-colors text-sm">O nama</Link></li>
+              <li><Link href="/galerija" className="text-gray-400 hover:text-white transition-colors text-sm">Galerija</Link></li>
               <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors text-sm">FAQ</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors text-sm">Kontakt</Link></li>
               <li><Link href="/cenovnik" className="text-gray-400 hover:text-white transition-colors text-sm">Cenovnik</Link></li>

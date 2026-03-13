@@ -12,7 +12,10 @@ declare global {
 export default function AboutPage() {
   const trackPhoneCall = () => {
     if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'phone_call');
+      window.gtag('event', 'phone_call', {
+        event_category: 'engagement',
+        event_label: 'about_page_cta'
+      });
     }
   };
 

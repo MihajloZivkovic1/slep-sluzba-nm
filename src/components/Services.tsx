@@ -1,3 +1,4 @@
+'use client'
 import { Truck, Wrench, Car, Phone, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
@@ -85,6 +86,14 @@ export default function Services() {
           <Link
             href="tel:+381600490036"
             className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.gtag) {
+                window.gtag('event', 'phone_call', {
+                  event_category: 'engagement',
+                  event_label: 'services_cta'
+                });
+              }
+            }}
           >
             <Phone className="w-6 h-6 mr-2" />
             Trebate pomoć? Pozovite 060 049 0036
