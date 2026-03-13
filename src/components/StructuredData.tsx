@@ -3,6 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Šlep Služba NM",
+    "alternateName": ["Slep Sluzba NM", "Slep Sluzba Pancevo", "Šlep Služba Pančevo"],
     "image": "https://slepsluzba-nm.rs/slep-sluzba-logo.webp",
     "telephone": "+381600490036",
     "email": "slepsluzbanm@gmail.com",
@@ -32,7 +33,7 @@ export default function StructuredData() {
       { "@type": "Place", "name": "Kačarevo" },
       { "@type": "Place", "name": "Borča" },
       { "@type": "Place", "name": "Ovča" },
-      { "@type": "City", "name": "Beograd" }
+      { "@type": "Place", "name": "Vojlovica" }
     ],
     "aggregateRating": {
       "@type": "AggregateRating",

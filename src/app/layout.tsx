@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Šlep Služba Pančevo 0-24 | Stižemo za 10 min | Pozovite Odmah',
-  description: 'Šlep služba Pančevo i okolina — dostupni 0-24. Stižemo za 10 minuta. Šlepanje svih vozila, pomoć na putu. Povoljne cene. ☎ 060 049 0036',
+  description: 'Šlep služba Pančevo i okolina — dostupni 0-24. Stižemo za 10 minuta. Slepovanje svih vozila, pomoc na putu. Povoljne cene od 3000 RSD. ☎ 060 049 0036',
   keywords: 'šlep služba pančevo, slep sluzba pancevo, šlep pančevo, pomoć na putu pančevo, šlep služba cena, šlep 0-24, slep sluzba',
   openGraph: {
     title: 'Šlep Služba Pančevo 0-24 | Stižemo za 10 min',

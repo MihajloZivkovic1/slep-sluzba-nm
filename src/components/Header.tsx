@@ -2,28 +2,13 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown } from 'lucide-react'
-
-const municipalities = [
-  { name: 'Pančevo', slug: '', isHome: true },
-  { name: 'Stari Grad', slug: 'stari-grad' },
-  { name: 'Vračar', slug: 'vracar' },
-  { name: 'Novi Beograd', slug: 'novi-beograd' },
-  { name: 'Zemun', slug: 'zemun' },
-  { name: 'Voždovac', slug: 'vozdovac' },
-  { name: 'Zvezdara', slug: 'zvezdara' },
-  { name: 'Čukarica', slug: 'cukarica' },
-  { name: 'Rakovica', slug: 'rakovica' },
-  { name: 'Palilula', slug: 'palilula' }
-]
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isLocationsOpen, setIsLocationsOpen] = useState(false)
 
   const closeMobileMenu = () => {
     setIsOpen(false)
-    setIsLocationsOpen(false)
   }
 
   return (
@@ -49,25 +34,9 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               Početna
             </Link>
-            <div className="relative group">
-              <button className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors">
-                Lokacije
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="grid grid-cols-2 gap-2 p-4">
-                  {municipalities.map((municipality) => (
-                    <Link
-                      key={municipality.slug || 'pancevo'}
-                      href={municipality.isHome ? '/' : `/slep-sluzba/${municipality.slug}`}
-                      className={`text-sm hover:text-primary-600 hover:bg-gray-50 px-3 py-2 rounded transition-colors ${municipality.isHome ? 'text-primary-600 font-semibold' : 'text-gray-700'}`}
-                    >
-                      {municipality.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <Link href="/galerija" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+              Galerija
+            </Link>
             <Link href="/faq" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               FAQ
             </Link>
@@ -99,27 +68,13 @@ export default function Header() {
               >
                 Početna
               </Link>
-              <button
-                onClick={() => setIsLocationsOpen(!isLocationsOpen)}
-                className="flex items-center w-full text-left text-gray-700 hover:text-primary-600 font-medium"
+              <Link
+                href="/galerija"
+                className="block text-gray-700 hover:text-primary-600 font-medium"
+                onClick={closeMobileMenu}
               >
-                Lokacije
-                <ChevronDown className={`ml-1 h-4 w-4 transform transition-transform ${isLocationsOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {isLocationsOpen && (
-                <div className="pl-4 space-y-2">
-                  {municipalities.map((municipality) => (
-                    <Link
-                      key={municipality.slug || 'pancevo'}
-                      href={municipality.isHome ? '/' : `/slep-sluzba/${municipality.slug}`}
-                      className={`block text-sm hover:text-primary-600 ${municipality.isHome ? 'text-primary-600 font-semibold' : 'text-gray-600'}`}
-                      onClick={closeMobileMenu}
-                    >
-                      {municipality.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+                Galerija
+              </Link>
               <Link
                 href="/faq"
                 className="block text-gray-700 hover:text-primary-600 font-medium"

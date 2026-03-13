@@ -5,21 +5,9 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://slepsluzba-nm.rs';
 
-  // Sve lokacije iz XML sitemap-a
+  // Lokacije
   const lokacije = [
-    'pancevo',      // Glavna lokacija - priority 1.0
-    'stari-grad',
-    'vracar',
-    'novi-beograd',
-    'zemun',
-    'vozdovac',
-    'zvezdara',
-    'cukarica',
-    'rakovica',
-    'palilula',
-    'grocka',
-    'savski-venac',
-    'surcin'
+    'pancevo',
   ];
 
   // Osnovne stranice
@@ -47,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date('2025-11-19'),
       changeFrequency: 'monthly',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/galerija`,
+      lastModified: new Date('2026-03-13'),
+      changeFrequency: 'weekly',
+      priority: 0.7,
     },
   ];
 

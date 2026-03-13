@@ -1,5 +1,4 @@
-import { MapPin, Clock, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import { MapPin, Clock } from 'lucide-react'
 
 const surroundingAreas = [
   {
@@ -16,6 +15,11 @@ const surroundingAreas = [
     name: 'Kačarevo',
     description: 'Industrijska zona',
     arrivalTime: '10-15 min',
+  },
+  {
+    name: 'Vojlovica',
+    description: 'Industrijska zona Pančeva',
+    arrivalTime: '5-10 min',
   },
   {
     name: 'Borča',
@@ -82,16 +86,6 @@ export default function PancevoArea() {
           ))}
         </div>
 
-        {/* Link to Belgrade pages */}
-        <div className="text-center mt-10">
-          <Link
-            href="/slep-sluzba/novi-beograd"
-            className="inline-flex items-center text-primary-600 hover:text-primary-800 font-medium text-lg transition-colors"
-          >
-            Pokrivamo i ceo Beograd — pogledajte lokacije
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Link>
-        </div>
       </div>
     </section>
   )
